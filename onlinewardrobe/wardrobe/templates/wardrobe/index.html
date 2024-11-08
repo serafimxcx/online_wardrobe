@@ -1,0 +1,105 @@
+{% extends "wardrobe/layout.html" %}
+
+{% block body %}
+    <div class="content_container">
+        <div class="content_div" id="otd_div">
+            <h3 class="content_title">Outfit of the Day</h3>
+            <hr>
+            {% for event in events %}
+                <h4 id="event_title">Agenda: {{ event.event_name }}</h4>
+                <p id="eventTime">Time: {{ event.start }} to {{event.end}}</p>
+                <input type="hidden" id="event_id">
+                <div class="index_img_outfit_container">
+                    <table class="plan_outfit_container2">
+                        <tr>
+                            {% for outfit in event.outfits %}
+                                <td>
+                                    <a href="/outfit_details/{{ outfit.id }}">
+                                        <div class="index_event_outfits event_outfit_container2">
+                                            {% if outfit.outerwear.image %}
+                                                <img src="{{ outfit.outerwear.image }}" class="img_item_outfit" id="img_outerwear" alt="Outerwear Image">
+                                            {% endif %}
+                                            {% if outfit.top.image %}
+                                                <img src="{{ outfit.top.image }}" class="img_item_outfit" id="img_top" alt="Top Image">
+                                            {% endif %}
+                                            {% if outfit.bottom.image %}
+                                                <img src="{{ outfit.bottom.image }}" class="img_item_outfit" id="img_bottom" alt="Bottom Image">
+                                            {% endif %}
+                                            {% if outfit.footwear.image %}
+                                                <img src="{{ outfit.footwear.image }}" class="img_item_outfit" id="img_footwear" alt="Footwear Image">
+                                            {% endif %}
+                                        </div>
+                                    </a>
+                                </td>
+                            {% endfor %}
+                        </tr>
+                    </table>
+                </div>
+            {% empty %}
+            <a href="{% url 'outfit_plan' %}"><button type="button" id="btn_plan_outfit"><i class="bi bi-plus"></i> You haven't choose an outfit for this day</button>    
+            </a>
+            {% endfor %}
+        </div>
+
+        <br><br>
+
+        <div class="content_div" id="outfits_div">
+            <h3 class="content_title">Your Outfits</h3>
+            <h5 class="content_subtitle">Here are your created outfits...</h5>
+            <hr>
+            <div class="img_outfit_container" id="img_outfit_container">
+                <table class="img_outfit_container2">
+                    <tr>
+                        
+                        <td>
+                            <a href="{% url 'outfit_creation' %}"><div class="outfit_container2 btn_new_outfit">
+                                <div>
+                                    <i class="bi bi-plus-circle-fill"></i>
+                                </div>
+                            </div></a>
+                        </td>
+                        
+                        {% for outfit in outfits %}
+                        <td>
+                            <a href="{% url 'outfit_details' outfit_id=outfit.id %}"><div class="outfit_container2" id="{{outfit.id}}">
+                                {% if outfit.outerwear.image is not None %}
+                                <img src="/media/{{ outfit.outerwear.image }}" alt="" class="img_item_outfit" id="img_outerwear">
+                                {% endif %}
+                                <img src="/media/{{ outfit.top.image }}" alt="" class="img_item_outfit" id="img_top"><br><br><br>
+                                <img src="/media/{{ outfit.bottom.image }}" alt="" class="img_item_outfit" id="img_bottom"><br><br><br>
+                                <img src="/media/{{ outfit.footwear.image }}" alt="" class="img_item_outfit" id="img_footwear"><br><br><br>
+                                <h5 class="outfit_title">{{ outfit.outfit_name }}</h5>
+                            </div></a>
+                        </td>
+
+                        </td>
+    
+                        {% endfor %}
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="content_div" id="reco_div">
+            <h3 class="content_title">Recommendations</h3>
+            <h5 class="content_subtitle">Based on your preferences you might like this...</h5>
+            <hr>
+            <div class="row">
+                {% for outfit in recommended_outfits %}
+                    
+                <div class="col-sm-4 reco_outfit_div">
+                    <br>
+                    <a href="{% url 'item_detail' item_id=outfit.id %}">
+                        <span class="reco_outfit_name">{{ outfit.outfit_name }} ({{outfit.style}})</span><br><br>
+                        <img src="{{ outfit.original_image.url }}" alt="{{ outfit.outfit_name }}" class="reco_outfit">
+                    </a></div>
+                {% endfor %}
+            </div>
+                
+            
+        </div>
+        
+    </div>
+{% endblock %}

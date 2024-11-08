@@ -1,0 +1,95 @@
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="{% static 'wardrobe/styles.css' %}" rel="stylesheet">
+
+    <div class="recommended_container">
+      <table width="100%">
+        <tr>
+          <td style="line-height: 1.6;"><h1 class="r_item_name">{{ item.outfit_name }} </h1>
+            <h2 style="text-transform: capitalize;">{{item.category}}</h2>
+            
+            {% for style in item.style.all %}
+            <span><i class="bi bi-arrow-through-heart-fill"></i>&nbsp;{{style}}</span>
+            {% endfor %}
+            {% if item.body_shape and item.category != "accessory"%}
+                  <br><span><i class="bi bi-person-standing"></i>&nbsp;Best fitted for {{recommendation.body_shape}} bodyshape</span>
+                  {% endif %}
+            
+          </td>
+            <td style="text-align: right;">
+              <h1 class="apptitle">FashionFolio</h1><br>
+              {% if own_item %}
+              <button type="button" class="item_owned"><i class="bi bi-check-lg"></i> Item Owned</button>
+              {% else %}
+                {% if in_wishlist %}
+                <a href="{% url 'profile' %}"><button type="button" class="item_owned" item_id="{{item.id}}"><i class="bi bi-check-lg"></i> Added to Wishlist</button></a>
+                {% else %}
+                <button type="button" class="btn_reco" id="btn_addwishlist" item_id="{{item.id}}"><i class="bi bi-bag-fill"></i> Add to Wishlist</button>
+                {% endif %}
+              
+              {% endif %}
+                
+                <a href="{% url 'index' %}"><button type="button" class="btn_reco"><i class="bi bi-house-door-fill"></i> Home</button></a>
+            </td>
+        </tr>
+      </table>
+      <hr><br>
+      <div class="row">
+          <div class="col-lg-6" style="text-align: center;">
+            <img src="{{ item.image.url }}" alt="{{ item.outfit_name }}" class="img_item">
+          </div>
+          <div class="col-lg-6">
+            <h4>Similar Items</h4>
+            <br>
+            <table width="100%">
+              
+            
+              {% for recommendation, similarity, label_name in recommendations %}
+              <tr class="n_reco_item" item_id="{{recommendation.id}}">
+                <td style="text-align: center;"><img src="{{ recommendation.original_image.url }}" alt="{{ item.outfit_name }}" class="img_reco"></td>
+                <td><h5><span style="text-transform: capitalize;">{{ recommendation.outfit_name }}</span>
+                  (Similarity: {{ similarity|floatformat:0 }}%)</h5>
+                  <span><i class="bi bi-arrow-through-heart-fill"></i>&nbsp;{{recommendation.style}}</span>
+                  {% if recommendation.body_shape and recommendation.category != "accessory"%}
+                  <br><span><i class="bi bi-person-standing"></i>&nbsp;Best fitted for {{recommendation.body_shape}} bodyshape</span>
+                  {% endif %}
+                </td>
+              </tr>
+             
+              {% endfor %}
+            </table>
+          </div>
+      </div>
+    </div>
+
+    <script>
+        $(function(){
+          $(".n_reco_item").click(function(){
+              var item_id=$(this).attr("item_id");
+              window.location.href="/item/"+item_id;
+              
+          });
+
+          $("#btn_addwishlist").click(function(){
+              var item_id=$(this).attr("item_id");
+
+              $.ajax({
+                type: "GET",
+                url: '/add_wishlist/'+item_id,
+                dataType: "json",
+                success: function (data) {
+                    alert("Added to wishlist successfully.");
+                    location.reload();
+                }
+              });
+          });
+        })
+    </script>
+  
+  
+  
+{% endblock %}

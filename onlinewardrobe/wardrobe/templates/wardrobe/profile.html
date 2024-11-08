@@ -1,0 +1,202 @@
+{% extends "wardrobe/layout.html" %}
+{% load static %}
+
+{% block body %}
+<div class="content_container profile_container">
+{% for profile in userprofile %}
+    <div class="row profileinfo_container">
+        <div class="col-lg-3">
+            <center><img src="media/{{ profile.profilepic }}"alt='Image' id='profile_mini_dp'>
+            <br><br>
+            <h3><b>{{profile.name}}</b></h3>
+            <h5>@{{profile.user.username}}</h5><br>
+            
+        </center>
+        </div>
+        <div class="col-lg-9">
+            <div class="row">
+                <div class="col-lg-8" id="left_col_editprof">
+                    <i><p>{{profile.bio|linebreaksbr}}</p></i>
+                </div>
+                <div class="col-lg-4" id="right_col_editprof">
+                    <button type="button" class="default_btn" id="btn_editprof">Edit Profile</button>
+                </div>
+            </div>
+            
+            <br>
+            <div class="row">
+                <div class="col-lg-4">
+                    <i class="bi bi-clock-fill"></i>&nbsp; {{profile.weight}} kg
+                </div>
+                <div class="col-lg-4">
+                    <i class="bi bi-rulers"></i>&nbsp; {{profile.height}} cm
+                </div>
+                <div class="col-lg-4">
+                    <i class="bi bi-person-standing"></i>&nbsp; {{profile.body_shape}} bodyshape
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-lg-4">
+                    <i class="bi bi-arrow-through-heart-fill"></i>&nbsp; Preferred Styles:
+                    <ul>
+                        {% for style in profile.pref_style.all %}
+                            <li>{{ style }}</li>
+                        {% endfor %}
+                    </ul>
+
+                </div>
+                <div class="col-lg-4">
+                    <i class="bi bi-gender-trans"></i> &nbsp;Gendered Styles:
+
+                    <ul>
+                        {% for gender in pref_genderedstyles %}
+                            <li>{{ gender }}</li>
+
+                        {% endfor %}
+                    </ul>
+                    
+                </div>
+                <div class="col-lg-4">
+                    <i class="bi bi-palette-fill"></i>&nbsp; Preferred Colors:
+
+                    <ul>
+                        {% for color in profile.pref_color.all %}
+                            <li>{{ color }}</li>
+                        {% endfor %}
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="profilecontent_container">
+        <!-- <table class="profile_nav" width="100%">
+            <tr>
+                <td>Posts</td>
+                <td>Medias</td>
+                <td>Likes</td>
+            </tr>
+        </table> -->
+        <hr>
+        <br>
+        <h3><b><i class="bi bi-bag-fill"></i> &nbsp;Wishlist</b></h3><br>
+        {% for item in wishlist %}
+            {% if forloop.counter0|divisibleby:4 %}
+            </div><div class="row outfit_container"> 
+            {% endif %}
+            <div class="col-sm-3" style="text-align: center;">
+                <a href="{% url 'item_detail' item_id=item.item.id %}"><img src="media/{{item.item.original_image}}" class="img_wishlist_item" alt="{{item.item.outfit_name}}"></a>
+            </div>
+        
+        {% endfor %}
+        
+    </div>
+    
+    
+
+    <div class="modal" id="editprof_modal">
+    
+        <div id="editprof_div">
+            <form action="{% url 'update_profile' %}" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <table width="100%">
+                <tr>
+                    <td><h3><b>Edit Profile</b></h3></td>
+                    <td style="text-align: right;"><button class="default_btn" id="btn_saveupdate" type="submit">Save</button></td>
+                </tr>
+            </table>
+            <hr><br>
+            <div style="text-align: center;">
+                <img id="profileImage" src="media/{{profile.profilepic}}" alt="add-administrator"/>
+                    <input id="imageUpload" type="file" name="img_profile" placeholder="Photo" capture>
+                <br><br>
+                Image Selected: <span id="selectedimg"></span>
+            </div>
+                
+                        
+            <br>
+            <label for="txt_updatename"><i>Name:</i></label>
+            <input type="text" name="txt_updatename" id="txt_updatename" class="txt_updateinput" value="{{profile.name}}"><br><br>
+            <label for="txt_updatebio"><i>Bio: </i></label>
+            <textarea name="txt_updatebio" id="txt_updatebio" class="txt_updateinput">{{profile.bio}}</textarea><br><br>
+            <div class="row">
+                <div class="col-lg-4"><label for="txt_updateheight"><i>Height: </i></label>
+                    <input type="number" name="txt_updateheight" id="txt_updateheight" class="txt_updateinput" value="{{profile.height}}"><br><br>
+                </div>
+                <div class="col-lg-4"><label for="txt_updateweight"><i>Weight: </i></label>
+                    <input type="number" name="txt_updateweight" id="txt_updateweight" class="txt_updateinput" value="{{profile.weight}}"><br><br>
+                </div>
+                <div class="col-lg-4"><label for="slct_updatebody"><i>Bodyshape: </i></label>
+                    <select name="slct_updatebody" id="slct_updatebody" class="txt_updateinput">
+                        {% for bodyshape in bodyshapes %}
+                            {% if bodyshape == profile.body_shape %}
+
+                            <option value="{{ bodyshape }}" selected>{{ bodyshape }}</option>
+                            {% else %}
+                            <option value="{{ bodyshape }}">{{ bodyshape }}</option>
+
+                            {% endif %}
+                            
+                        
+                        {% endfor %}
+                    </select><br><br>
+                </div>
+            </div>
+            <div class="row">
+                <label for="">Preferred Colors: </label><br><br>
+                {% for color in colors %}
+                    {% if forloop.counter0|divisibleby:3 %}
+                        </div><div class="row">
+                    {% endif %}
+                    <div class="col-lg-4">
+                            <input type="checkbox" id="color{{ color.id }}" name="slct_updatecolor" value="{{ color.id }}"
+                                {% if color in profile.pref_color.all %}checked{% endif %}>
+                            <label for="color{{ color.id }}">{{ color.name }}</label><br>
+                    
+                    </div>
+                {% endfor %}
+            </div><br>
+            <div class="row">
+                <label for="">Preferred Gendered Style: </label><br><br>
+                <div class="col-lg-4">
+                    <input type="checkbox" id="genderstyle1" name="slct_updategenderedstyle" value="Feminine" 
+                        {% if "Feminine" in pref_genderedstyles %}checked{% endif %} >
+                    <label for="genderstyle1">Feminine</label><br>
+                </div>
+                <div class="col-lg-4">
+                    <input type="checkbox" id="genderstyle2" name="slct_updategenderedstyle" value="Masculine" 
+                        {% if "Masculine" in pref_genderedstyles %}checked{% endif %}>
+                    <label for="genderstyle2">Masculine</label><br>
+                </div>
+                <div class="col-lg-4">
+                    <input type="checkbox" id="genderstyle2" name="slct_updategenderedstyle" value="Neutral"
+                        {% if "Neutral" in pref_genderedstyles %}checked{% endif %}>
+                    <label for="genderstyle3">Neutral</label><br>
+                </div>
+            </div><br>
+            <div class="row">
+                <label for="">Preferred Style: </label><br><br>
+                {% for style in styles %}
+                    {% if forloop.counter0|divisibleby:3 %}
+                        </div><div class="row">
+                    {% endif %}
+                    <div class="col-lg-4">
+                            <input type="checkbox" id="style{{ style.id }}" name="slct_updatestyle" value="{{ style.id }}"
+                                {% if style in profile.pref_style.all %}checked{% endif %}>
+                            <label for="style{{ style.id }}">{{ style.name }}</label><br>
+                    
+                    </div>
+                {% endfor %}
+            </div><br>
+        </form>
+        </div>
+    
+    </div>
+{% endfor %}
+</div>
+<script src="{% static 'wardrobe/script_profile.js' %}"></script>
+
+{% endblock %}      

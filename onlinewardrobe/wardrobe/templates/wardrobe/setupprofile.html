@@ -1,0 +1,201 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setup Profile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="{% static 'wardrobe/loginstyle.css' %}" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <form action="{% url 'setup_profile' %}" method="POST" class="setup_body" id="setupForm" enctype="multipart/form-data">
+            {% csrf_token %}
+
+            <!--Enter name-->
+            <div class="setup_div" id="setup_div1">
+                <h1 class="apptitle">FashionFolio</h1>
+                <h5>Welcome to FashionFolio. Before you start embarking on your fashion journey, we want to ask some few information to enhance your experience.</h5>
+                <hr>
+                <br>
+                <div class="setup_txt_div">
+                    <h2>What do you want us to call you? </h2>
+                    <input type="text" name="txt_name" class="txtsetup" id="txt_name" placeholder="Enter you name"><br><br>
+                    <span id="message"></span>
+                </div>
+                <br><br><br>
+                <div style="width: 100%; text-align: right">
+                    <button type="button" class="classic_btn" id="btn_next1">Next</button>
+                </div>
+            </div>
+
+            <!--enter profile-->
+            <div class="setup_div" id="setup_div2">
+                <h2 class="apptitle">FashionFolio</h2>
+                <h4>Add your profile picture.</h4><hr><br>
+                <div class="setup_txt_div" style="text-align: center;">
+                    <img id="profileImage" width="150" height="150" src="media/profpic/default_userpic.png" alt="add-administrator"/>
+                    <input id="imageUpload" type="file" name="img_profile" placeholder="Photo" capture>
+                        <br><br>
+                    Image Selected: <span id="selectedimg"></span>
+                </div>
+                <br><br><br>
+                <div style="width: 100%; text-align: right">
+                    <button type="button" class="classic_btn" id="btn_back2">Back</button>
+                    <button type="button" class="classic_btn" id="btn_next2">Next</button>
+                </div>  
+            </div>
+
+            <!--enter birthdate-->
+            <div class="setup_div" id="setup_div3">
+                <h2 class="apptitle">FashionFolio</h2>
+                <h4>Add your birthday.</h4><hr><br>
+                <div class="setup_txt_div">
+                    <input type="date" name="txt_birthdate" class="txtsetup" id="txt_birthdate"><br><br>
+                    <span id="message2"></span>
+                </div>
+                <br><br><br>
+                <div style="width: 100%; text-align: right">
+                    <button type="button" class="classic_btn" id="btn_back3">Back</button>
+                    <button type="button" class="classic_btn" id="btn_next3">Next</button>
+                </div> 
+            </div>
+
+            <!--enter weight, height, bodyshape-->
+            <div class="setup_div" id="setup_div4">
+                <h2 class="apptitle">FashionFolio</h2>
+                <h4>Add your body measurements.</h4><hr><br>
+                <div class="setup_txt_div">
+                    <table>
+                        <tr>
+                            <td>Weight: </td>
+                            <td><input type="number" name="txt_weight" class="txtsetup" id="txt_weight" placeholder="in kg"></td>
+                        </tr>
+                        <tr>
+                            <td>Height: </td>
+                            <td><input type="number" name="txt_height" class="txtsetup" id="txt_height" placeholder="in cm"></td>
+                        </tr>
+                        <tr>
+                            <td>Body Shape: </td>
+                            <td><select name="slct_bodyshape" class="txtsetup" id="slct_bodyshape">
+                                    <option value="">Select Body Shape...</option>
+                                    {% for bodyshape in bodyshapes %}
+                                        <option value="{{ bodyshape }}">{{ bodyshape }}</option>
+                                    {% empty %}
+                                        <option value="">No value</option>
+                                    {% endfor %}
+                                </select></td>
+                        </tr>
+                    </table>
+                    <br><br>
+                    <span id="message3"></span>
+                </div>
+                <br><br>
+                <div style="width: 100%; text-align: right">
+                    <button type="button" class="classic_btn" id="btn_back4">Back</button>
+                    <button type="button" class="classic_btn" id="btn_next4">Next</button>
+                </div> 
+            </div>
+
+            <!--enter color-->
+            <div class="setup_div" id="setup_div5">
+                <h2 class="apptitle">FashionFolio</h2>
+                <h4>Choose your preferred colors.</h4><hr>
+                <div class="setup_txt_div">
+                    <div class="row">
+                        {% for color in colors %}
+                            {% if forloop.counter0|divisibleby:3 %}
+                                </div><div class="row">
+                            {% endif %}
+                            <div class="col-lg-4">
+                                    <input type="checkbox" id="color{{ color.id }}" name="slct_color" value="{{ color.id }}">
+                                    <label for="color{{ color.id }}">{{ color.name }}</label><br>
+                            
+                            </div>
+                        {% endfor %}
+                    </div>
+                    
+                    <br>
+                    <span id="message4"></span>
+                </div>
+                <br><br>
+                <div style="width: 100%; text-align: right">
+                    <button type="button" class="classic_btn" id="btn_back5">Back</button>
+                    <button type="button" class="classic_btn" id="btn_next5">Next</button>
+                </div> 
+            </div>
+
+            <!--enter style-->
+            <div class="setup_div" id="setup_div6">
+                <h2 class="apptitle">FashionFolio</h2>
+                <h4>Choose your preferred styles.</h4><hr>
+                <div class="setup_txt_div">
+                    <span>Choose your gendered style: </span><br><br>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <input type="checkbox" id="genderstyle1" name="slct_genderedstyle" value="Feminine">
+                            <label for="genderstyle1">Feminine</label><br>
+                        </div>
+                        <div class="col-lg-4">
+                            <input type="checkbox" id="genderstyle2" name="slct_genderedstyle" value="Masculine">
+                            <label for="genderstyle2">Masculine</label><br>
+                        </div>
+                        <div class="col-lg-4">
+                            <input type="checkbox" id="genderstyle2" name="slct_genderedstyle" value="Neutral">
+                            <label for="genderstyle3">Neutral</label><br>
+                        </div>
+                    </div>
+                    <br><br>
+                    <span>Choose your aesthetic: </span><br><br>
+                    <div class="row">
+                        {% for style in styles %}
+                            {% if forloop.counter0|divisibleby:3 %}
+                                </div><div class="row">
+                            {% endif %}
+                            <div class="col-lg-4">
+                                    <input type="checkbox" id="style{{ style.id }}" name="slct_style" value="{{ style.id }}">
+                                    <label for="style{{ style.id }}">{{ style.name }}</label><br>
+                            
+                            </div>
+                        {% endfor %}
+                    </div>
+                    
+                    <br>
+                    <span id="message5"></span>
+                </div>
+                <br><br>
+                <div style="width: 100%; text-align: right">
+                    <button type="button" class="classic_btn" id="btn_back6">Back</button>
+                    <button type="button" class="classic_btn" id="btn_next6">Next</button>
+                </div> 
+            </div>
+
+            <!--enter bio-->
+            <div class="setup_div" id="setup_div7">
+                <h2 class="apptitle">FashionFolio</h2>
+                <h4>Add some introduction.</h4><hr>
+                <div class="setup_txt_div">
+                    <textarea name="txt_bio" class="txtsetup" id="txt_bio" maxlength="250" placeholder="Tell us something about yourself."></textarea>
+                    
+                    <br>
+                    <span id="message6"></span>
+                </div>
+                <br><br>
+                <div style="width: 100%; text-align: right">
+                    <button type="button" class="classic_btn" id="btn_back7">Back</button>
+                    <button type="button" class="classic_btn" id="btn_save">Save</button>
+                </div> 
+            </div>
+
+
+        </form>
+    </div>
+    
+    <script src="{% static 'wardrobe/script_setup.js' %}"></script>
+    
+</body>
+</html>

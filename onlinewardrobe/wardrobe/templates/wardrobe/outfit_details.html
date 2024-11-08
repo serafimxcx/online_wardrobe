@@ -1,0 +1,262 @@
+{% extends "wardrobe/layout.html" %}
+{% load static %}
+
+{% block body %}
+    <div class="content_container">
+     
+        <div class="user_outfit_container" id="user_outfit_container{{outfit.id}}">
+                <table width="100%">
+                    <tr>
+                        <td><button class="default_btn btn_back" type="button">Back</button></td>
+                        <td style="text-align: right;">
+                            <!-- <button type="button" class="default_btn">Add to Calendar</button> -->
+                            <button type="button" class="default_btn btn_delete_outfit" id="{{outfit.id}}">Delete</button>
+                        </td>
+                    </tr>
+                </table>
+                <hr><br>
+                <center><h3><b>{{outfit.outfit_name}}</b></h3>
+                {% if outfit.desc %}
+                    <p><i>{{outfit.desc}}</i></p>
+                {% elif outfit.desc == "" %}
+                    <p><i>No description.</i></p>
+
+                {% endif %}
+            </center>
+                <br>
+
+                <div class="row ">
+                    <div class="col-lg-5">
+                        <div class="img_container"><img src="/media/{{ outfit.top.image }}" alt="" class="item_img"></div>
+                    </div>
+                    <div class="col-lg-7 outfit_info_container">
+                        <div class="outfit_info">
+                            <h4>{{outfit.top.outfit_name}}</h4>
+                            <h5>{{outfit.top.subcategory.name}}</h5>
+                            <br>
+                            {% if outfit.top.desc %}
+                                <p>{{outfit.top.desc}}</p>
+                            {% elif outfit.top.desc == "" %}
+                                <p>No description.</p>
+        
+                            {% endif %} 
+                            <br>
+                            <div class="row">
+                                <div class="col-6">
+                                    <ul class="list_style">
+                                        {% for style in outfit.top.style.all %}
+                                            <li><i class="bi bi-arrow-through-heart-fill"></i>&nbsp; {{ style }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                   
+                                </div>
+                                <div class="col-6">
+                                    <i class="bi bi-gender-trans"></i>&nbsp; {{ outfit.top.gendered }}
+                                    <br>
+                                    <i class="bi bi-palette-fill"></i>&nbsp; {{outfit.top.color}}
+                                </div>  
+                            </div>
+                            <br>
+                            <a href="{% url 'recommended_item' item_id=outfit.top.id %}" target="_blank">
+                                <button type="button" class="default_btn">See Similar Items</button>
+                            </a>
+                        </div>      
+                    </div>
+    
+                </div>
+                <br>
+                <hr>
+                {% if outfit.outerwear %}
+                <div class="row ">
+                    <div class="col-lg-5">
+                        <div class="img_container"><img src="/media/{{ outfit.outerwear.image }}" alt="" class="item_img"></div>
+                    </div>
+                    <div class="col-lg-7 outfit_info_container">
+                        <div class="outfit_info">
+                            <h4>{{outfit.outerwear.outfit_name}}</h4>
+                            <h5>{{outfit.outerwear.subcategory.name}}</h5>
+                            <br>
+                            {% if outfit.outerwear.desc %}
+                                <p>{{outfit.outerwear.desc}}</p>
+                            {% elif outfit.outerwear.desc == "" %}
+                                <p>No description.</p>
+        
+                            {% endif %}  
+                            <br>
+                            <div class="row">
+                                <div class="col-6">
+                                    <ul class="list_style">
+                                        {% for style in outfit.outerwear.style.all %}
+                                            <li><i class="bi bi-arrow-through-heart-fill"></i>&nbsp; {{ style }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                   
+                                </div>
+                                <div class="col-6">
+                                    <i class="bi bi-gender-trans"></i>&nbsp; {{ outfit.outerwear.gendered }}
+                                    <br>
+                                    <i class="bi bi-palette-fill"></i>&nbsp; {{outfit.outerwear.color}}
+                                </div>  
+                            </div>
+                            <br>
+                            <a href="{% url 'recommended_item' item_id=outfit.outerwear.id %}" target="_blank">
+                                <button type="button" class="default_btn">See Similar Items</button>
+                            </a>
+                        </div>     
+                    </div>
+                </div>
+                <br><hr>
+                {% endif %}
+
+                {% if outfit.bottom %}
+                <div class="row ">
+                    <div class="col-lg-5">
+                        <div class="img_container"><img src="/media/{{ outfit.bottom.image }}" alt="" class="item_img"></div>
+                    </div>
+                    <div class="col-lg-7 outfit_info_container">
+                        <div class="outfit_info">
+                            <h4>{{outfit.bottom.outfit_name}}</h4>
+                            <h5>{{outfit.bottom.subcategory.name}}</h5>
+                            <br>
+                            {% if outfit.bottom.desc %}
+                                <p>{{outfit.bottom.desc}}</p>
+                            {% elif outfit.bottom.desc == "" %}
+                                <p>No description.</p>
+        
+                            {% endif %} 
+                            <br>
+                            <div class="row">
+                                <div class="col-6">
+                                    <ul class="list_style">
+                                        {% for style in outfit.bottom.style.all %}
+                                            <li><i class="bi bi-arrow-through-heart-fill"></i>&nbsp; {{ style }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                   
+                                </div>
+                                <div class="col-6">
+                                    <i class="bi bi-gender-trans"></i>&nbsp; {{ outfit.bottom.gendered }}
+                                    <br>
+                                    <i class="bi bi-palette-fill"></i>&nbsp; {{outfit.bottom.color}}
+                                </div>  
+                            </div>
+                            <br>
+                            <a href="{% url 'recommended_item' item_id=outfit.bottom.id %}" target="_blank">
+                                <button type="button" class="default_btn">See Similar Items</button>
+                            </a> 
+                        </div>     
+                    </div>
+                </div>
+                <br><hr>
+                {% endif %}
+
+                <div class="row ">
+                    <div class="col-lg-5">
+                        <div class="img_container"><img src="/media/{{ outfit.footwear.image }}" alt="" class="item_img"></div>
+                    </div>
+                    <div class="col-lg-7 outfit_info_container">
+                        <div class="outfit_info">
+                            <h4>{{outfit.footwear.outfit_name}}</h4>
+                            <h5>{{outfit.footwear.subcategory.name}}</h5>
+                            <br>
+                            {% if outfit.footwear.desc %}
+                                <p>{{outfit.footwear.desc}}</p>
+                            {% elif outfit.footwear.desc == "" %}
+                                <p>No description.</p>
+        
+                            {% endif %} 
+                            <br>
+                            <div class="row">
+                                <div class="col-6">
+                                    <ul class="list_style">
+                                        {% for style in outfit.footwear.style.all %}
+                                            <li><i class="bi bi-arrow-through-heart-fill"></i>&nbsp; {{ style }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                   
+                                </div>
+                                <div class="col-6">
+                                    <i class="bi bi-gender-trans"></i>&nbsp; {{ outfit.footwear.gendered }}
+                                    <br>
+                                    <i class="bi bi-palette-fill"></i>&nbsp; {{outfit.footwear.color}}
+                                </div>  
+                            </div>
+                            <br>
+                            <a href="{% url 'recommended_item' item_id=outfit.footwear.id %}" target="_blank">
+                                <button type="button" class="default_btn">See Similar Items</button>
+                            </a> 
+                        </div>     
+                    </div>
+                </div>
+
+                {% if outfit.accessories %}
+                {% for accessory in outfit.accessories.all %}
+                <br><hr>
+                <div class="row">
+                    
+                    <div class="col-lg-5">
+                        <div class="img_container"><img src="/media/{{ accessory.image }}" alt="" class="item_img"></div>
+                    </div>
+                    <div class="col-lg-7 outfit_info_container">
+                        <div class="outfit_info">
+                            <h4>{{accessory.outfit_name}}</h4>
+                            <h5>{{accessory.subcategory.name}}</h5>
+                            <br>
+                            {% if accessory.desc %}
+                                <p>{{accessory.desc}}</p>
+                            {% elif accessory.desc == "" %}
+                                <p>No description.</p>
+        
+                            {% endif %} 
+                            <br>
+                            <div class="row">
+                                <div class="col-6">
+                                    <ul class="list_style">
+                                        {% for style in accessory.style.all %}
+                                            <li><i class="bi bi-arrow-through-heart-fill"></i>&nbsp; {{ style }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                   
+                                </div>
+                                <div class="col-6">
+                                    <i class="bi bi-gender-trans"></i>&nbsp; {{ accessory.gendered }}
+                                    <br>
+                                    <i class="bi bi-palette-fill"></i>&nbsp; {{accessory.color}}
+                                </div>  
+                            </div>
+                            <br>
+                            <a href="{% url 'recommended_item' item_id=accessory.id %}" target="_blank">
+                                <button type="button" class="default_btn">See Similar Items</button>
+                            </a> 
+                            
+                        </div>     
+                    </div>
+                    
+                    
+                </div>
+                
+                {% endfor %}
+                {% endif %}
+
+        </div>
+        
+        
+    </div>
+
+    <!--modal for delete-->
+    <div class="modal" id="delete_item_modal">
+        <div id="delete_item_div">
+            <h4>Are you sure you want to delete this outfit? </h4>
+            <hr><br>
+            <form action="{% url 'remove_outfit' %}" method="post">
+                {% csrf_token %}
+                <input type="hidden" name="txt_del_outfit_id" id="txt_del_outfit_id">
+                <button type="button" class="btn btn-warning" id="btn_delete_no">No</button>
+                <button type="submit" class="btn btn-danger" id="btn_delete_yes">Yes</button>
+            </form>
+            
+        </div>
+    </div>
+
+    <script src="{% static 'wardrobe/script_creation.js' %}"></script>
+{% endblock %}

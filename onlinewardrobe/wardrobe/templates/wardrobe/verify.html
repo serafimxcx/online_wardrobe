@@ -1,0 +1,40 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setup Profile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="{% static 'wardrobe/loginstyle.css' %}" rel="stylesheet">
+</head>
+<body>
+    <form action="{% url 'verify_account' %}" class="setup_body" method="post">
+        {% csrf_token %}
+        <div class="setup_div">
+            <h1 class="apptitle">FashionFolio</h1>
+            <h5>Welcome to FashionFolio. Before you start embarking on your fashion journey, we want to ask some few information to enhance your experience.</h5>
+            <hr>
+            <br>
+            <div class="setup_txt_div">
+                <h2>Account Verification </h2>
+                <input type="text" name="txt_username" class="txtsetup" placeholder="Enter your registered username" required><br><br>
+                <input type="text" name="txt_code" class="txtsetup" placeholder="Enter your verification code indicated in the email" required><br>
+                {% if message %}
+                <br><span class="messages">{{ message }}</span>
+                {% endif %}
+            </div>
+            <br>
+            <div style="width: 100%; text-align: right">
+                <button type="submit" class="classic_btn">Save</button>
+            </div>
+            
+        </div>    
+    </form>
+    
+
+</body>
+</html>

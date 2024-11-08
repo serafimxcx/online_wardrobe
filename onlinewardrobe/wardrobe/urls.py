@@ -1,0 +1,36 @@
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path("", views.index, name="index"),
+    path("login", views.login_view, name="login"),
+    path("register", views.register_view, name="register"),
+    path("logout", views.logout, name="logout"),
+    path("setup_profile", views.setup_profile, name="setup_profile"),
+    path("profile", views.profile, name="profile"),
+    path('item/<int:item_id>/', views.item_detail, name='item_detail'),
+    path('wardrobe/<category>', views.wardrobe, name='wardrobe'),
+    path('wardrobe/<category>', views.wardrobe, name='wardrobe'),
+    path('add_item/<category>', views.add_item, name='add_item'),
+    path('remove_item/<category>/', views.remove_item, name='remove_item'),
+    path('get_item/<int:item_id>/', views.get_item, name='get_item'),
+    path('edit_item/<category>', views.edit_item, name='edit_item'),
+    path("outfit_creation", views.outfit_creation, name="outfit_creation"),
+    path("outfit_details/<int:outfit_id>/", views.outfit_details, name="outfit_details"),
+    path("add_outfit", views.add_outfit, name="add_outfit"),
+    path("remove_outfit", views.remove_outfit, name="remove_outfit"),
+    path('user_item/<int:item_id>/', views.recommended_item, name='recommended_item'),
+    path('planner', views.outfit_plan, name='outfit_plan'),
+    path('all_events/', views.all_events, name='all_events'), 
+    path('add_event/', views.add_event, name='add_event'), 
+    path('update_event/', views.update_event, name='update_event'),
+    path('remove_event/', views.remove_event, name='remove_event'),
+    path('item_recommendation/', views.body_item_reco, name='body_item_reco'),
+    path('get_recommended_outfits/', views.get_recommended_outfits, name='get_recommended_outfits'),
+    path('add_wishlist/<int:item_id>/', views.add_wishlist, name='add_wishlist'),
+    path('remove_wishlist/<int:item_id>/', views.remove_wishlist, name='remove_wishlist'),
+    path('smart_recommend/', views.smart_recommend, name='smart_recommend'),
+    path('update_profile/', views.update_profile, name='update_profile'),
+    path('verify_account/', views.verify_account, name='verify_account'),
+  
+]

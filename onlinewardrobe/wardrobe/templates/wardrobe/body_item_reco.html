@@ -1,0 +1,54 @@
+{% extends "wardrobe/layout.html" %}
+{% load static %}
+
+{% block body %}
+<div class="content_container">
+    
+    
+    <center>
+    <button id="captureButton" class="default_btn"><i class="bi bi-camera-fill"></i>&nbsp; Capture</button>
+    <video id="video" width="640" height="480" autoplay hidden></video>
+    <canvas class="video_output" id="output" width="640" height="480"></canvas>
+
+    <div id="countdownModal" class="countdownModal">
+        <div class="countdown_div">
+            <h3 id="countdownTimer">5</h3>
+        </div>
+    </div>
+    </center>
+
+    
+</div>
+
+<div class="modal" id="enterheight_modal">
+    <div id="enterheight_div">
+        
+        <h3><b>Please enter your height in cm</b></h3>
+        <br>
+        <input type="number" class="txt_input" id="heightInput" value="180">
+        <br><br>
+        <button type="button" class="default_btn" id="btn_doneheight">Done</button>
+    </div>
+
+</div>
+
+<div class="modal" id="reco_outfit_modal">
+    <div id="reco_outfit_div2">
+        <h3>Based on your <b><span id="detected_bodyshape"></span></b> body shape</h3>
+        <h5>Here is the outfit that suits you...</h5>
+        <hr>
+        <div class="img_outfit_container">
+            <table class="plan_outfit_container2">
+                <tr>
+                    
+                </tr>
+
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="{% static 'wardrobe/script_bodyscan.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,336 @@
+outfit_name,category,subcategory,size,body_shape,color,image_path,style,gendered,brand,item_link
+basic top,top,shirt,small,hourglass,white,images/top/1.png,casual,neutral,,
+avery top,top,blouse,medium,inverted triangle,black,images/top/2.png,romantic,feminine,,
+karen top,top,tank,small,rectangle,gray,images/top/3.png,casual,feminine,,
+zipper sweater,top,sweater,large,pear-shaped,beige,images/top/4.png,streetwear,neutral,,
+zipper sweater,top,sweater,large,pear-shaped,beige,images/top/4.png,athleisure,neutral,,
+plain hoodie,top,hoodie,large,rectangle,off-white,images/top/5.png,streetwear,neutral,,
+plain hoodie,top,hoodie,large,rectangle,off-white,images/top/5.png,minimalist,neutral,,
+plain hoodie,top,hoodie,large,rectangle,off-white,images/top/5.png,casual,neutral,,
+satin gown,formalwear,evening gown,small,hourglass,blue,images/formalwear/2.png,romantic,feminine,,
+silk evening gown,formalwear,evening gown,medium,hourglass,black,images/formalwear/3.png,romantic,feminine,,
+trench coat,outerwear,coat,large,inverted triangle,black,images/outerwear/3.png,classic,masculine,,
+trench coat,outerwear,coat,large,inverted triangle,black,images/outerwear/3.png,vintage,masculine,,
+formal terno,formalwear,tuxedo,medium,hourglass,white,images/formalwear/5.png,classic,feminine,,
+fur jacket,outerwear,jacket,large,apple-shaped,brown,images/outerwear/1.png,vintage,masculine,,
+wool blazer,outerwear,blazer,medium,rectangle,beige,images/outerwear/2.png,vintage,feminine,,
+leather coat,outerwear,coat,large,pear-shaped,black,images/outerwear/3.png,minimalist,masculine,,
+leather coat,outerwear,coat,large,pear-shaped,black,images/outerwear/3.png,classic,masculine,,
+knitted vest,outerwear,vest,medium,rectangle,cream,images/outerwear/4.png,preppy,neutral,,
+onitsuka sneaker,footwear,sneaker,free-size,free-shape,cream,images/footwear/1.png,casual,neutral,,
+knee high leather boots,footwear,boots,free-size,free-shape,black,images/footwear/2.png,romantic,feminine,,
+low heels,footwear,heels,free-size,free-shape,brown,images/footwear/3.png,classic,feminine,,
+mary jane shoes,footwear,heels,free-size,free-shape,red,images/footwear/4.png,vintage,feminine,,
+mary jane shoes,footwear,heels,free-size,free-shape,red,images/footwear/4.png,casual,feminine,,
+stiletto,footwear,heels,free-size,free-shape,black,images/footwear/5.png,casual,feminine,,
+summer gym set,activewear,sportswear,medium,pear-shaped,pink,images/activewear/1.png,athleisure,feminine,,
+cross backless gym set,activewear,gymwear,small,hourglass,brown,images/activewear/2.png,athleisure,feminine,,
+seamless yoga set,activewear,yogawear,large,rectangle,pink,images/activewear/3.png,athleisure,feminine,,
+onepiece running gear,activewear,running gear,small,inverted triangle,maroon,images/activewear/4.png,athleisure,feminine,,
+straight cut,bottom,pants,medium,rectangle,beige,images/bottom/1.png,casual,neutral,,
+denim jeans,bottom,jeans,small,apple-shaped,denim black,images/bottom/2.png,vintage,neutral,,
+silk skirt,bottom,skirts,small,hourglass,black,images/bottom/3.png,romantic,feminine,,
+jeans shorts,bottom,shorts,medium,inverted triangle,denim blue,images/bottom/4.png,streetwear,neutral,,
+flare pants,bottom,leggings,small,pear-shaped,black,images/bottom/5.png,classic,feminine,,
+plunging neckline,dress,mini dress,small,hourglass,red,images/dress/1.png,romantic,feminine,,
+floral dress,dress,maxi dress,medium,rectangle,blue,images/dress/2.png,casual,feminine,,
+plunging backless,dress,formal dress,small,apple-shaped,navy,images/dress/3.png,classic,feminine,,
+silk fitted dress,dress,midi dress,medium,pear-shaped,black,images/dress/4.png,minimalist,feminine,,
+sleeveless long dress,dress,casual dress,medium,inverted triangle,green,images/dress/5.png,vintage,feminine,,
+small backpack,accessory,backpack, , ,pink,images/accessory/2.png,minimalist,neutral,,
+cap ,accessory,hats, , ,blue,images/accessory/3.png,casual,neutral,,
+soft scarft ,accessory,scarft, , ,peach,images/accessory/4.png,preppy,neutral,,
+leather belt,accessory,belt, , ,brown,images/accessory/5.png,vintage,neutral,,
+collared polo shirt,top,shirt,small,inverted triangle,blue,images/top/6.png,casual,neutral,,
+round neck summer t-shirt,top,shirt,large,rectangle,white,images/top/7.png,vintage,neutral,,
+frank ocean shirt,top,shirt,medium,hourglass,white,images/top/8.png,streetwear,neutral,,
+sade printed top,top,shirt,small,hourglass,white,images/top/9.png,vintage,neutral,,
+button-down short sleeve shirt,top,shirt,large,inverted triangle,green,images/top/10.png,casual,masculine,,
+y2k cropped long sleeve shirt,top,shirt,large,pear-shaped,green,images/top/11.png,vintage,feminine,,
+round neck slim fit shirt,top,shirt,small,hourglass,white,images/top/12.png,casual,feminine,,
+bonnie ribboned blouse,top,blouse,medium,pear-shaped,cream,images/top/13.png,vintage,feminine,,
+floral cropped babydoll top,top,blouse,small,apple-shaped,peach,images/top/14.png,casual,feminine,,
+buttoned racerback cropped top,top,tank,large,hourglass,black,images/top/15.png,casual,feminine,,
+men solid tank top,top,tank,large,inverted triangle,white,images/top/16.png,minimalist,masculine,,
+striped sweater,top,sweater,large,inverted triangle,gray,images/top/17.png,casual,neutral,,
+men turtleneck sweater,top,sweater,medium,inverted triangle,green,images/top/18.png,casual,masculine,,
+zipped basic hoodie,top,hoodie,large,inverted triangle,black,images/top/19.png,casual,neutral,,
+graphic drawstring hoodie,top,hoodie,large,inverted triangle,black,images/top/20.png,casual,neutral,,
+brown leather jacket,outerwear,jacket,large,inverted triangle,brown,images/top/5.png,vintage,neutral,,
+minimal print graphic hoodie,outerwear,jacket,medium,rectangle,black,images/top/6.png,streetwear,neutral,,
+double collar trench coat,outerwear,coat,small,inverted triangle,red,images/top/7.png,vintage,masculine,,
+oversized trench coat,outerwear,coat,large,pear-shaped,black,images/top/8.png,classic,feminine,,
+cream single button coat,outerwear,coat,medium,pear-shaped,cream,images/top/9.png,minimalist,feminine,,
+carhartt padded vest,outerwear,vest,small,apple-shaped,black,images/top/10.png,streetwear,neutral,,
+full sleeve straight blazer,formalwear,blazer,large,rectangle,black,images/formalwear/6.png,vintage,neutral,,
+slim fit men's blazer,formalwear,blazer,small,inverted triangle,blue,images/formalwear/7.png,casual,masculine,,
+men classic tuxedo,formalwear,tuxedo,large,rectangle,black,images/formalwear/8.png,classic,masculine,,
+wine red satin floor length dress,formalwear,evening gown,small,hourglass,red,images/formalwear/9.png,classic,feminine,,
+origami infatuation cocktail dress,formalwear,cocktail dress,medium,hourglass,black,images/formalwear/10.png,classic,feminine,,
+smooth leather platform shoes,footwear,boots, , ,black,images/footwear/6.png,vintage,neutral,,
+basic casual sneakers,footwear,sneakers, , ,white,images/footwear/7.png,casual,neutral,,
+fur calf boots,footwear,boots, , ,black,images/footwear/8.png,classic,feminine,,
+flat heel slippers,footwear,flat, , ,brown,images/footwear/9.png,bohemian,neutral,,
+ankle strap sandals,footwear,sandals, , ,white,images/footwear/10.png,casual,feminine,,
+pointed-toe stiletto,footwear,heels, , ,black,images/footwear/11.png,classic,feminine,,
+summer dress, dress,casual dress,medium,hourglass,green,images/dress/7.png,casual,feminine,,
+sleeveless slim fitting sling dress,dress,casual dress,small,pear-shaped,green,images/dress/8.png,casual,feminine,,
+twisted slit plunging dress,dress,midi dress,large,oval,black,images/dress/9.png,minimalist,feminine,,
+draped slip satin dress,dress,mini dress,small,inverted triangle,black,images/dress/10.png, classic,feminine,,
+ladies blue denim jean skirt,bottom,skirt,small,hourglass,blue,images/bottom/6.png,vintage,feminine,,
+cargo shorts,bottom,shorts,large,inverted triangle,green,images/bottom/7.png,streetwear,neutral,,
+wideleg cargo pants,bottom,pants,medium,pear-shaped,brown,images/bottom/8.png,vintage,neutral,,
+mens straight cut trousers,bottom,pants,large,oval,cream,images/bottom/9.png,casual,masculine,,
+washed denim straightcut jeans,bottom,jeans,medium,hourglass,blue,images/bottom/10.png,casual,masculine,,
+low waist wideleg jeans,bottom,jeans,small,apple-shaped,blue,images/bottom/11.png,vintage,feminine,,
+brown leather mini skirt,bottom,skirt,small,hourglass,brown,images/bottom/12.png,vintage,feminine,,
+low boot cut medium wash jeans,bottom,jeans,large,hourglass,blue,images/bottom/13.png,vintage,feminine,,
+brown straightcut pants,bottom,pants,small,hourglass,brown,images/bottom/14.png,casual,masculine,,
+skinny washed distressed jeans,bottom,jeans,small,rectangle,blue,images/bottom/15.png,streetwear,masculine,,
+spring summer pleated skirt,bottom,skirt,medium,hourglass,brown,images/bottom/16.png,vintage,feminine,,
+high waist leather side slit skirt,bottom,skirt,large,inverted triangle,black,images/bottom/17.png,gothic,feminine,,
+mens summer shorts,bottom,shorts,large,hourglass,green,images/bottom/18.png,casual,masculine,,
+ladies slim fitted leggings,bottom,leggings,medium,hourglass,black,images/bottom/19.png,athleisure,feminine,,
+mens summer laced shorts,bottom,shorts,large,hourglass,black,images/bottom/20.png,casual,masculine,,
+mens gym workout shirt,activewear,gym wear,large,inverted triangle,black,images/activewear/5.png,athleisure,masculine,,
+mens terno sportswear,activewear,sportswear,medium,rectangle,blue,images/activewear/6.png,athleisure,masculine,,
+ladies terno slim running gear,activewear,running gear,small,pear-shaped,gray,images/activewear/7.png,athleisure,feminine,,
+running swimming gear,activewear,sportswear,large,inverted triangle,black,images/activewear/8.png,athleisure,masculine,,
+women fitted yoga pants,activewear,yoga wear,small,apple-shaped,black,images/activewear/9.png,athleisure,feminine,,
+ladies zipped fitted gym top,activewear,gym wear,medium,hourglass,gray,images/activewear/10.png,athleisure,feminine,,
+simple medium-sized backpack,accessory,backpack, , ,black,images/accessory/6.png,casual,neutral,,
+mens solid color belt,accessory,belt, , ,black,images/accessory/7.png,classic,masculine,,
+brown vintage belt,accessory,belt, , ,brown,images/accessory/8.png,vintage,neutral,,
+mini formal handbag,accessory,handbag, , ,cream,images/accessory/9.png,classic,feminine,,
+classy office shoulder bag,accessory,handbag, , ,black,images/accessory/10.png,casual,feminine,,
+stylish shoulder and handbag,accessory,handbag, , ,pink,images/accessory/11.png,casual,feminine,,
+classy stylish baguette bag,accessory,handbag, , ,black,images/accessory/12.png,classic,feminine,,
+plain solid color leather handbag,accessory,handbag, , ,black,images/accessory/13.png,casual,feminine,,
+mens simple shoulder bag,accessory,handbag, , ,black,images/accessory/15.png,casual,masculine,,
+smooth leather shoulder bag,accessory,handbag, , ,black,images/accessory/16.png,vintage,neutral,,
+mens office handcarry shoulder bag,accessory,handbag, , ,black,images/accessory/17.png,casual,neutral,,
+retro brown leather office bag,accessory,handbag, , ,brown,images/accessory/19.png,vintage,neutral,,
+the north face breeze brimmer hat,accessory,hat, , ,cream,images/accessory/31.png,casual,neutral,,
+solid black baseball cap,accessory,hat, , ,black,images/accessory/32.png,casual,neutral,,
+wideleg apple trouser,bottom,pants,medium,pear-shaped,black,images/bottom/21.png,casual,neutral,,
+wideleg pleated trouser,bottom,pants,large,apple-shaped,black,images/bottom/22.png,classic,feminine,,
+mid-waist straightcut old money pants,bottom,pants,medium,rectangle,cream,images/bottom/23.png,minimalist,masculine,,
+multi-pocket cargo pants,bottom,pants,small,rectangle,white,images/bottom/24.png,streetwear,neutral,,
+garterized multi-pocket baggy cargo pants,bottom,pants,medium,rectangle,grey,images/bottom/25.png,casual,neutral,,
+skinny washed denim jeans,bottom,jeans,small,inverted triangle,blue,images/bottom/26.png,urban,feminine,,
+brown straightcut mom jeans,bottom,jeans,medium,rectangle,brown,images/bottom/27.png,retro,feminine,,
+fitted straightcut denim jeans,bottom,jeans,large,pear-shaped,blue,images/bottom/28.png,casual,feminine,,
+blue high rise denim jeans,bottom,jeans,large,apple-shaped,blue,images/bottom/29.png,casual,feminine,,
+wideleg midrise blue denim,bottom,jeans,medium,rectangle,blue,images/bottom/30.png,classic,feminine,,
+basic versatile stretchy skirt,bottom,skirt,medium,hour-glass,black,images/bottom/31.png,minimalist,feminine,,
+plain skirt with slit,bottom,skirt,medium,pear-shaped,black,images/bottom/32.png,gothic,feminine,,
+summer high waist skirts,bottom,skirt,medium,hourglass,grey,images/bottom/33.png,casual,feminine,,
+solid ruched bodycon summer skirt,bottom,skirt,small,hourglass,black,images/bottom/34.png,classic,feminine,,
+tennis pleated school mini skirt,bottom,skirt,small,apple-shaped,black,images/bottom/35.png,athleisure,feminine,,
+men's drawstring shorts,bottom,shorts,large,rectangle,green,images/bottom/36.png,minimalist,masculine,,
+women's ripped denim shorts,bottom,shorts,small,hour-glass,blue,images/bottom/37.png,casual,feminine,,
+nike sport shorts,bottom,shorts,small,rectangle,black,images/bottom/38.png,athleisure,neutral,,
+vintage mom high waisted shorts,bottom,shorts,medium,inverted triangle,white,images/bottom/39.png,minimalist,feminine,,
+drawstring short summer shorts,bottom,shorts,medium,rectangle,blue,images/bottom/40.png,streetwear,neutral,,
+grey high waisted leggings,bottom,leggings,large,inverted triangle,gret,images/bottom/41.png,athleisure,feminine,,
+black high waisted leggings,bottom,leggings,small,rectangle,black,images/bottom/42.png,athleisure,feminine,,
+mid-rise stretch-jersey leggings,bottom,leggings,medium,inverted triangle,grey,images/bottom/43.png,athleisure,feminine,,
+tights fitness leggings,bottom,leggings,small,rectangle,black,images/bottom/44.png,athleisure,feminine,,
+full length slimfit leggings,bottom,leggings,small,hourglass,black,images/bottom/45.png,casual,feminine,,
+cold shoulder ruffle trim dress,dress,casual dress,medium,pear-shaped,black,images/dress/11.png,casual,feminine,,
+lace up front puff sleeve dress,dress,mini dress,small,hourglass,cream,images/dress/12.png,preppy,feminine,,
+lace up front ruffle hem dress,dress,mini dress,medium,pear-shaped,black,images/dress/13.png,gothic,feminine,,
+black lace overlay homecoming dress,dress,casual dress,medium,apple-shaped,black,images/dress/14.png,casual,feminine,,
+plain white dress,dress,mini dress,small,inverted triangle,white,images/dress/15.png,casual,feminine,,
+women's sleeveless v neck solid backless dress,dress,formal dress,small,hourglass,red,images/dress/16.png,classic,feminine,,
+women's off shoulder wrapped dress,dress,maxi dress,medium,hourglass,blue,images/dress/17.png,vintage,feminine,,
+almond jersey corset dress,dress,maxi dress,medium,pear-shaped,beige,images/dress/18.png,classic,feminine,,
+women's vintage sleeveless v-neck cocktail dress,dress,midi dress,medium,inverted triangle,red,images/dress/19.png,retro,feminine,,
+spaghetti strap scoop neck plain lace open back slit bodycon dress,dress,midi dress,small,hourglass,white,images/dress/20.png,classic,feminine,,
+spaghetti strap bodycon ruched club dress,dress,midi dress,medium,pear-shaped,black,images/dress/21.png,casual,feminine,,
+white plain maxi dress,dress,maxi dress,small,pear-shaped,white,images/dress/22.png,casual,feminine,,
+summer lace bandage hollow out bodycon dress,dress,maxi dress,small,hourglass,black,images/dress/23.png,classic,feminine,,
+one shoulder bowknot shoulder bandage dress,dress,mini dress,small,hourglass,black,images/dress/24.png,classic,feminine,,
+keyhole cut out sheath dress,dress,casual dress,small,inverted triangle,black,images/dress/25.png,classic,feminine,,
+emerald satin midi dress,dress,formal dress,medium,hourglass,green,images/dress/26.png,classic,feminine,,
+orange sayin midi dress,dress,midi dress,small,hourglass,orange,images/dress/27.png,classic,feminine,,
+brown bandage cut out asymmetrical midi dress,dress,midi dress,medium,apple-shaped,brown,images/dress/28.png,casual,feminine,,
+black corset midi dress,dress,midi dress,small,hourglass,black,images/dress/29.png,casual,feminine,,
+off shoulder v-neck bodycon,dress,formal dress,medium,pear-shaped,black,images/dress/30.png,classic,feminine,,
+off shoulder long sleeve party dress,dress,mini dress,small,rectangle,blue,images/dress/31.png,free-spirited,feminine,,
+sleevelesss summer party jean dress,dress,mini dress,small,hourglass,blue,images/dress/32.png,casual,feminine,,
+wrapped neck mini dress jn blue,dress,mini dress,small,inverted triangle,blue,images/dress/33.png,romantic,feminine,,
+floral ruffle dress,dress,casual dress,medium,rectangle,green,images/dress/34.png,casual,feminine,,
+veja black canvas,footwear,sneakers, , ,black,images/footwear/12.png,streetwear,neutral,,
+plain white casual sneakers,footwear,sneakers, , ,white,images/footwear/13.png,casual,neutral,,
+nike blazer mid'77,footwear,sneakers, , ,white,images/footwear/14.png,streetwear,neutral,,
+nike air jordan 1 retro high og satin red,footwear,sneakers, , ,red,images/footwear/15.png,streetwear,neutral,,
+nike dunk mid panda,footwear,sneakers, , ,black,images/footwear/16.png,streetwear,neutral,,
+brown zipped leather boots,footwear,boots, , ,brown,images/footwear/17.png,classic,neutral,,
+black ankle boots,footwear,boots, , ,black,images/footwear/18.png,vintage,neutral,,
+black slip on platform,footwear,boots, , ,black,images/footwear/19.png,vintage,neutral,,
+wren platform boots,footwear,boots, , ,black,images/footwear/20.png,vintage,neutral,,
+white wren platform boots,footwear,boots, , ,white,images/footwear/21.png,vintage,neutral,,
+steve madden agree sandals,footwear,sandals, , ,tan,images/footwear/22.png,casual,feminine,,
+rubberised sandals with buckle,footwear,sandals, , ,black,images/footwear/23.png,casual,neutral,,
+black cross strap sporty sandals,footwear,sa dals, , ,black,images/footwear/24.png,casual,feminine,,
+ankle strap footbed sandals,footwear,sandals, , ,cream,images/footwear/25.png,casual,femine,,
+nylon knotted flatform,footwear,sandals, , ,cream,images/footwear/26.png,preppy,feminine,,
+ballet flats,footwear,flats, , ,nude,images/footwear/27.png,casual,feminine,,
+nine west women's speak up pointed toe flats,footwear,flats, , ,nude,images/footwear/28.png,casual,feminine,,
+satin round toe evening flats,footwear,flats, , ,white,images/footwear/29.png,casual,femine,,
+nude slingback sandals,footwear,sandals, , ,black,images/footwear/30.png,classic,feminine,,
+nude ribbon flats,footwear,flats, , ,nude,images/footwear/31.png,casual,feminine,,
+elegant pink leather pumps,footwear,heels, , ,pink,images/footwear/32.png,preppy,feminine,,
+asymmetric strappy heeled sandals,footwear,heels, , ,cream,images/footwear/33.png,casual,feminine,,
+sandals in crepe satin and rhinestones,footwear,heels, , ,black,images/footwear/34.png,casual,feminine,,
+asymmetric strappy sandals,footwear,heels, , ,cream,images/footwear/35.png,classic,feminine,,
+gold heeled sandals,footwear,sandals, , ,gold,images/footwear/36.png,casual,feminine,,
+fleece lined up solid zip up hoodie,outerwear,jacket, , ,black,images/footwear/11.png,casual,neutral,,
+black hooded jacket,outerwear,jacket,medium,rectangle,black,images/footwear/12.png,casual,neutral,,
+prada nylon cropped jacket,outerwear,jacket,large,rectangle,black,images/footwear/13.png,casual,neutral,,
+prada hooded leather jacket,outerwear,jacket,small,inverted triangle,black,images/footwear/14.png,casual,neutral,,
+zip up plain loose jacket,outerwear,jacket,medium,rectangle,black,images/footwear/15.png,casual,neutral,,
+women's oversized blazer,outerwear,blazer,large,pear-shaped, white,images/footwear/16.png,classic,feminine,,
+regular-fit jacket with off-center closure,outerwear,blazer,medium,hourglass,pink,images/footwear/17.png,classic,feminine,,
+men's fitted black trench coat,outerwear,coat,large,rectangle,grey,images/footwear/18.png,casual,masculine,,
+mid heel boots,footwear,coat,large,rectangle,grey,images/footwear/18.png,casual,feminine,,
+jacket with gathered sleeves,outerwear,coat,large,rectangle,black,images/footwear/19.png,classic,masculine,,
+chester coat black,outerwear,coat,large,rectangle,black,images/footwear/20.png,classic,masculine,,
+open back blazer,outerwear,blazer,small,rectangle,black,images/footwear/21.png,casual,masculine,,
+belted crepe blazer,outerwear,blazer,small,inverted triangle,black,images/footwear/22.png,classic,feminine,,
+corporate leather blazer,outerwear,blazer,large,pear-shaped,black,images/footwear/23.png,classic,feminine,,
+shoulder pad double breasted blazer,outerwear,blazer,medium,inverted triangle,black,images/footwear/24.png,classic,feminine,,
+women black cross bandage short blazer,outerwear,blazer,small,hourglass,black,images/footwear/25.png,casual,feminine,,
+women saddle bag,accessory,handbag, , ,cream,images/accessory/61.png,casual,feminine,,
+caramel brown brushed shoulder bag,accessory,handbag, , ,brown,images/accessory/62.png,vintage,feminine,,
+chanel black lambskin bag,accessory,handbag, , ,black,images/accessory/63.png,classic,feminine,,
+prada cleo brushed shoulder bag,accessory,handbag, , ,grey,images/accessory/64.png,classic,feminine,,
+dior oblique messenger bag,accessory,handbag, , ,black,images/accessory/65.png,casual,neutral,,
+school casual backpack,accessory,backpack, , ,black,images/accessory/66.png,casual,neutral,,
+cama caramel backpack,accessory,backpack, , ,caramel,images/accessory/67.png,casual,neutral,,
+the north face backpack,accessory,backpack, , ,black,images/accessory/68.png,casual,neutral,,
+timbuk2 backpack,accessory,backpack, , ,blue,images/accessory/69.png,casual,neutral,,
+large khaki backpack,accessory,backpack, , ,khaki,images/accessory/70.png,casual,neutral,,
+washed hats olive,accessory,hat, , ,green,images/accessory/71.png,casual,neutral,,
+neon buckle hat isolated,accessory,hat, , ,green,images/accessory/72.png,streetwear,neutral,,
+jacquemus cotton logo hat,accessory,hat, , ,beige,images/accessory/73.png,casual,neutral,,
+the north face white buckle hat,accessory,hat, , ,white,images/accessory/74.png,casual,neutral,,
+fedora cap hat,accessory,hat, , ,cream,images/accessory/75.png,bohemian,neutral,,
+london silk twill,accessory,scarf, , ,brown,images/accessory/76.png,bohemian,neutral,,
+winter red scarf,accessory,scarf, , ,red,images/accessory/77.png,casual,neutral,,
+simple star scarf mustard,accessory,scarf, , ,yellow,images/accessory/78.png,casual,neutral,,
+leopard pattern hair scarf,accessory,scard, , ,white,images/accessory/79.png,casual,feminine,,
+knit white scarf,accessory,scarf, , ,white,images/accessory/80.png,casual,neutral,,
+shirring short sleeve t-shirt,top,shirt,small,inverted triangle,grey,images/top/21.png,casual,feminine,uniqlo,https://www.uniqlo.com/ph/en/products/E467046-000?colorCode=COL02&sizeCode=SMA003
+halter neck bra sleeveless top,top,shirt,small,hourglass,beige,images/top/22.png,casual,feminine,uniqlo,https://www.uniqlo.com/ph/en/products/E470939-000?colorCode=COL11&sizeCode=SMA003
+3d knit cotton long sleeve crew neck sweater,top,sweater,medium,hourglass,off-white,images/top/23.png,casual,feminine,uniqlo,https://www.uniqlo.com/ph/en/products/E461090-000?colorCode=COL01&sizeCode=SMA003
+crew neck short sleeve t-shirt,top,shirt,medium,hourglass,beige,images/top/24.png,casual,feminine,uniqlo,https://www.uniqlo.com/ph/en/products/E424873-000?colorCode=COL52&sizeCode=SMA003
+linen blend open collar short sleeve shirt,top,shirt,medium,rectangle-shaped,beige,images/top/25.png,casual,neutral,uniqlo,https://www.uniqlo.com/ph/en/products/E464739-000?colorCode=COL09&sizeCode=SMA002
+ribbed high neck half sleeve t-shirt,top,shirt,medium,rectangle-shaped,grey,images/top/29.png,casual,feminine,uniqlo,https://www.uniqlo.com/ph/en/products/E467045-000?colorCode=COL07&sizeCode=SMA003
+airism cotton cropped bra tube top,top,shirt,small,inverted triangle,white,images/top/30.png,casual,feminine,uniqlo,https://www.uniqlo.com/ph/en/products/E464437-000?colorCode=COL09&sizeCode=SMA003
+airism cotton boat neck bra camisole,top,shirt,small,inverted triangle,white,images/top/31.png,casual,feminine,uniqlo,https://www.uniqlo.com/ph/en/products/E468736-000?colorCode=COL02&sizeCode=SMA003
+sweat pullover long sleeve hoodie,top,hoodie,large,rectangle-shaped,grey,images/top/32.png,casual,neutral,uniqlo,https://www.uniqlo.com/ph/en/products/E444967-000?colorCode=COL05&sizeCode=SMA004
+Sweat Long Sleeve Full-Zip Hoodie,top,hoodie,large,rectangle-shaped,grey,images/top/33.png,casual,neutral,uniqlo,https://www.uniqlo.com/ph/en/products/E460324-000?colorCode=COL05&sizeCode=SMA005
+3D Knit Cotton Long Sleeve Crew Neck Sweater,top,sweater,medium,hourglass,blue,images/top/34.png,casual,neutral,uniqlo,https://www.uniqlo.com/ph/en/products/E466846-000?colorCode=COL56&sizeCode=SMA003
+Linen Blend Volume Short Sleeve Blouse,top,blouse,small,inverted triangle,blue,images/top/35.png,casual,feminine,uniqlo,https://www.uniqlo.com/ph/en/products/E466432-000?colorCode=COL60&sizeCode=SMA003
+Linen Blend Open Collar Short Sleeve Shirt,top,shirt,large,hourglass,pink,images/top/36.png,casual,feminine,uniqlo,https://www.uniqlo.com/ph/en/products/E467173-001?colorCode=COL11&sizeCode=SMA002
+Linen Blend Open Collar Short Sleeve Shirt,top,shirt,large,hourglass,blue,images/top/37.png,casual,feminine,uniqlo,https://www.uniqlo.com/ph/en/products/E467173-000?colorCode=COL68&sizeCode=SMA002
+Rayon Short Sleeve Blouse,top,shirt,large,inverted triangle,grey,images/top/38.png,casual,feminine,uniqlo,https://www.uniqlo.com/ph/en/products/E464721-000?colorCode=COL71&sizeCode=SMA003
+Linen Blend Sleeveless Blouse,top,blouse,small,inverted triangle,pink,images/top/39.png,formal,feminine,uniqlo,https://www.uniqlo.com/ph/en/products/E470793-000?colorCode=COL12&sizeCode=SMA003
+Linen Blend Band Collar Sleeve Shirt,top,shirt,large,inverted triangle,purple,images/top/40.png,formal,feminine,uniqlo,https://www.uniqlo.com/ph/en/products/E464735-000?colorCode=COL09&sizeCode=SMA002
+Crew Neck Short Sleeve Sweater,top,sweater,medium,hourglass,white,images/top/41.png,casual,neutral,uniqlo,https://www.uniqlo.com/ph/en/products/E466969-000?colorCode=COL46&sizeCode=SMA004
+Rayon Long Sleeve Blouse,top,blouse,small,inverted triangle,pink,images/top/42.png,formal,feminine,uniqlo,https://www.uniqlo.com/ph/en/products/E433604-000?colorCode=COL09&sizeCode=SMA004
+Rayon Printed Short Sleeve Blouse,top,blouse,large,inverted triangle,white,images/top/43.png,formal,feminine,uniqlo,https://www.uniqlo.com/ph/en/products/E464722-000?colorCode=COL51&sizeCode=SMA003
+Premium Linen Long Sleeve Shirt,top,shirt,large,inverted triangle,beige,images/top/44.png,formal,feminine,uniqlo,https://www.uniqlo.com/ph/en/products/E464732-000?colorCode=COL11&sizeCode=SMA003
+Linen Blend Open Collar Short Sleeve Shirt,top,shirt,medium,inverted triangle,beige,images/top/45.png,formal,feminine,uniqlo,https://www.uniqlo.com/ph/en/products/E464739-000?colorCode=COL12&sizeCode=SMA002
+AIRism Cotton Sleeveless Striped T-Shirt,top,shirt,medium,rectangle-shaped,grey,images/top/46.png,casual,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E470934-000?colorCode=COL01&sizeCode=SMA004
+AIRism Cotton Sleeveless T-Shirt,top,shirt,medium,inverted triangle,grey,images/top/47.png,casual,neutral,uniqlo,https://www.uniqlo.com/ph/en/products/E457517-000?colorCode=COL11&sizeCode=SMA004
+AIRism Cotton Relaxed Fit Half Sleeve T-Shirt,top,shirt,large,inverted triangle,grey,images/top/48.png,casual,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E467134-000?colorCode=COL36&sizeCode=SMA004
+AIRism Cotton Crew Neck Long Sleeve T-Shirt,top,sweater,medium,inverted triangle,grey,images/top/49.png,casual,neutral,uniqlo,https://www.uniqlo.com/ph/en/products/E465193-000?colorCode=COL30&sizeCode=SMA004
+DRY-EX Crew Neck Short Sleeve T-Shirt,top,shirt,large,inverted triangle,grey,images/top/50.png,casual,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E467543-000?colorCode=COL69&sizeCode=SMA003
+DRY-EX Crew Neck Short Sleeve T-shirt (Light),top,shirt,medium,inverted triangle,gray,images/top/51.png,casual,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E467544-000?colorCode=COL56&sizeCode=SMA004
+DRY-EX Crew Neck Short Sleeve T-Shirt,top,shirt,small,inverted triangle,black,images/top/52.png,casual,neutral,uniqlo,https://www.uniqlo.com/ph/en/products/E465191-000?colorCode=COL72&sizeCode=SMA004
+Dry Color Ribbed Tank Top,top,shirt,small,inverted triangle,gray,images/top/53.png,casual,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E444998-000?colorCode=COL09&sizeCode=SMA004
+Dry Pique Short Sleeve T-Shirt,top,shirt,large,inverted triangle,off-white,images/top/54.png,casual,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E469054-000?colorCode=COL69&sizeCode=SMA004
+Graphic Short Sleeve T-Shirt,top,shirt,large,rectangle-shaped,white,images/top/55.png,casual,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E467104-000?colorCode=COL14&sizeCode=SMA004
+Dry Color Crew Neck Short Sleeve T-Shirt,top,shirt,large,rectangle-shaped,gray,images/top/56.png,casual,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E465836-000?colorCode=COL03&sizeCode=SMA007
+RF Short Sleeve Graphic T-Shirt,top,shirt,medium,inverted triangle,violet,images/top/57.png,casual,neutral,uniqlo,https://www.uniqlo.com/ph/en/products/E459254-000?colorCode=COL76&sizeCode=SMA003
+Oversized Striped Half Sleeve T-Shirt,top,shirt,large,inverted triangle,gray,images/top/58.png,casual,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E457930-000?colorCode=COL69&sizeCode=SMA004
+Oversized Striped Half Sleeve T-Shirt,top,shirt,large,rectangle-shaped,black,images/top/59.png,casual,neutral,uniqlo,https://www.uniqlo.com/ph/en/products/E455414-000?colorCode=COL69&sizeCode=SMA004
+Cotton Crew Neck Short Sleeve T-Shirt,top,shirt,medium,rectangle-shaped,beige,images/top/60.png,casual,neutral,uniqlo,https://www.uniqlo.com/ph/en/products/E455365-001?colorCode=COL31&sizeCode=SMA004
+Cotton Crew Neck Short Sleeve T-Shirt,top,shirt,small,inverted triangle,green,images/top/61.png,casual,neutral,uniqlo,https://www.uniqlo.com/ph/en/products/E455365-000?colorCode=COL62&sizeCode=SMA004
+Crew Neck Short Sleeve T-Shirt,top,shirt,large,inverted triangle,pink,images/top/62.png,casual,neutral,uniqlo,https://www.uniqlo.com/ph/en/products/E422992-000?colorCode=COL62&sizeCode=SMA004
+Cotton Striped Oversized Crew Neck T-Shirt,top,shirt,large,inverted triangle,beige,images/top/63.png,casual,neutral,uniqlo,https://www.uniqlo.com/ph/en/products/E461914-000?colorCode=COL31&sizeCode=SMA004
+Cotton Oversized Crew Neck T-Shirt,top,shirt,large,inverted triangle,beige,images/top/64.png,casual,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E465185-000?colorCode=COL52&sizeCode=SMA003
+Oversized Half Sleeve T-Shirt,top,shirt,medium,inverted triangle,beige,images/top/65.png,casual,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E466874-000?colorCode=COL72&sizeCode=SMA003
+Oversized Striped Crew Neck Half Sleeve T-Shirt,top,shirt,medium,inverted triangle,gray,images/top/68.png,casual,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E465492-000?colorCode=COL69&sizeCode=SMA003
+Dry Color V Neck Short Sleeve T-Shirt,top,shirt,small,inverted triangle,green,images/top/69.png,casual,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E465188-000?colorCode=COL62&sizeCode=SMA004
+DRY-EX Half-Zip UV Protection Long Sleeve T-Shirt,top,sweater,medium,inverted triangle,blue,images/top/70.png,casual,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E472019-000?colorCode=COL00&sizeCode=SMA003
+AIRism Cotton Easy Shorts,bottom,short,small,inverted triangle,gray,images/bottom/46.png,casual,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E464823-000?colorCode=COL69&sizeCode=SMA004
+Cotton Relaxed Ankle Pants,bottom,pants,medium,inverted triangle,khaki,images/bottom/47.png,formal,feminine,uniqlo,https://www.uniqlo.com/ph/en/products/E466026-000?colorCode=COL69&sizeCode=SMA003
+Denim Wide Straight Cargo Pants,bottom,pants,medium,inverted triangle,blue,images/bottom/48.png,streetwear,neutral,uniqlo,https://www.uniqlo.com/ph/en/products/E468856-000?colorCode=COL64&sizeCode=SMA003
+Ultra Stretch Cropped Leggings Pants,bottom,pants,small,inverted triangle,black,images/bottom/49.png,casual,feminine,uniqlo,https://www.uniqlo.com/ph/en/products/E464834-000?colorCode=COL09&sizeCode=SMA003
+Ultra Stretch Cropped Denim Leggings Pants,bottom,pants,small,inverted triangle,blue,images/bottom/50.png,casual,feminine,uniqlo,https://www.uniqlo.com/ph/en/products/E464832-000?colorCode=COL68&sizeCode=SMA003
+Ultra Stretch Cropped Leggings Pants,bottom,pants,medium,inverted triangle,gray,images/bottom/51.png,casual,feminine,uniqlo,https://www.uniqlo.com/ph/en/products/E464831-000?colorCode=COL04&sizeCode=SMA003
+Ultra Stretch AIRism Straight Wide Pants,bottom,pants,medium,inverted triangle,gray,images/bottom/52.png,casual,feminine,uniqlo,https://www.uniqlo.com/ph/en/products/E468829-000?colorCode=COL31&sizeCode=SMA003
+Wide Straight Cargo Pants,bottom,pants,small,inverted triangle,beige,images/bottom/53.png,casual,feminine,uniqlo,https://www.uniqlo.com/ph/en/products/E464887-000?colorCode=COL30&sizeCode=SMA003
+Washable Knit Ribbed Pants (Longer Length),bottom,pants,medium,inverted triangle,gray,images/bottom/54.png,casual,feminine,uniqlo,https://www.uniqlo.com/ph/en/products/E463691-000?colorCode=COL30&sizeCode=SMA003
+Seersucker Easy Shorts (Gingham Check),bottom,short,medium,inverted triangle,beige,images/bottom/55.png,casual,feminine,uniqlo,https://www.uniqlo.com/ph/en/products/E468918-000?colorCode=COL09&sizeCode=SMA003
+Miracle Air Shorts (Pattern),bottom,pants,medium,inverted triangle,gray,images/bottom/56.png,casual,neutral,uniqlo,https://www.uniqlo.com/ph/en/products/E467577-000?colorCode=COL05&sizeCode=SMA004
+Parachute Cargo Shorts,bottom,short,small,inverted triangle,beige,images/bottom/57.png,casual,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E467159-000?colorCode=COL31&sizeCode=SMA004
+Cotton Easy Shorts,bottom,short,small,inverted triangle,beige,images/bottom/58.png,casual,feminine,uniqlo,https://www.uniqlo.com/ph/en/products/E467052-000?colorCode=COL34&sizeCode=SMA003
+High Rise Baggy Denim Shorts,bottom,short,small,inverted triangle,blue,images/bottom/59.png,casual,feminine,uniqlo,https://www.uniqlo.com/ph/en/products/E464945-001?colorCode=COL63&sizeCode=INS023
+High Rise Baggy Denim Shorts,bottom,short,medium,inverted triangle,blue,images/bottom/60.png,casual,feminine,uniqlo,https://www.uniqlo.com/ph/en/products/E464945-000?colorCode=COL65&sizeCode=INS023
+Smart Skort,bottom,skirt,small,inverted triangle,blue,images/bottom/61.png,casual,feminine,uniqlo,https://www.uniqlo.com/ph/en/products/E464914-000?colorCode=COL09&sizeCode=SMA003
+Linen Blend Skort (Printed),bottom,skirt,medium,inverted triangle,yellow,images/bottom/62.png,casual,feminine,uniqlo,https://www.uniqlo.com/ph/en/products/E464847-000?colorCode=COL09&sizeCode=SMA003
+Pleated Shorts,bottom,short,small,inverted triangle,gray,images/bottom/63.png,casual,feminine,uniqlo,https://www.uniqlo.com/ph/en/products/E464842-000?colorCode=COL05&sizeCode=SMA003
+Linen Cotton Shorts,bottom,short,medium,inverted triangle,khaki,images/bottom/64.png,casual,feminine,uniqlo,https://www.uniqlo.com/ph/en/products/E464837-000?colorCode=COL56&sizeCode=SMA003
+Cargo Shorts,bottom,short,medium,inverted triangle,khaki,images/bottom/65.png,casual,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E463886-000?colorCode=COL33&sizeCode=SMA004
+Geared Shorts,bottom,short,small,inverted triangle,green,images/bottom/66.png,casual,neutral,uniqlo,https://www.uniqlo.com/ph/en/products/E463870-000?colorCode=COL57&sizeCode=SMA004
+Smart Ankle Pants,bottom,pants,small,hourglass,gray,images/bottom/67.png,formal,feminine,uniqlo,https://www.uniqlo.com/ph/en/products/E450606-000?colorCode=COL31&sizeCode=SMA003
+Drapey Denim Pleated Pants,bottom,pants,medium,inverted triangle,blue,images/bottom/68.png,casual,feminine,uniqlo,https://www.uniqlo.com/ph/en/products/E468849-000?colorCode=COL31&sizeCode=SMA003
+Stretch Slim Ankle Jeans,bottom,jeans,small,inverted triangle,blue,images/bottom/69.png,casual,feminine,uniqlo,https://www.uniqlo.com/ph/en/products/E468844-000?colorCode=COL63&sizeCode=INS023
+Wide Straight Jeans,bottom,jeans,medium,inverted triangle,gray,images/bottom/70.png,casual,feminine,uniqlo,https://www.uniqlo.com/ph/en/products/E468841-000?colorCode=COL05&sizeCode=INS023
+Cotton Relaxed Ankle Pants (Denim),bottom,pants,medium,inverted triangle,blue,images/bottom/73.png,casual,feminine,uniqlo,https://www.uniqlo.com/ph/en/products/E461420-000?colorCode=COL68&sizeCode=SMA004
+Ultra Stretch DRY-EX Shorts,bottom,short,small,inverted triangle,blue,images/bottom/74.png,casual,neutral,uniqlo,https://www.uniqlo.com/ph/en/products/E470848-000?colorCode=COL03&sizeCode=SMA003
+utility short blouson,outerwear,coat,small,inverted triangle,khaki,images/outerwear/32.png,streetwear,neutral,uniqlo,https://www.uniqlo.com/ph/en/products/E459592-000?colorCode=COL30&sizeCode=SMA004
+comfort jacket,outerwear,coat,large,rectangle,gray,images/outerwear/31.png,formal,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E470050-000?colorCode=COL08&sizeCode=SMA003
+comfort jacket,outerwear,coat,large,rectangle,gray,images/outerwear/30.png,formal,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E472462-000?colorCode=COL07&sizeCode=SMA003
+cotton jacket,outerwear,jacket,large,rectangle,blue,images/outerwear/29.png,classic,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E467024-000?colorCode=COL68&sizeCode=SMA004
+Miracle Air Shirt Jacket (Wool Like),outerwear,coat,medium,rectangle,blue,images/outerwear/28.png,casual,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E470993-000?colorCode=COL69&sizeCode=SMA004
+Miracle Air Jacket (AirSense) (Wool Like),outerwear,coat,medium,inverted triangle,gray,images/outerwear/27.png,formal,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E468671-000?colorCode=COL05&sizeCode=SMA004
+Miracle Air Jacket (Wool Like),outerwear,coat,medium,inverted triangle,blue,images/outerwear/26.png,formal,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E467537-000?colorCode=COL69&sizeCode=SMA004
+Miracle Air Jacket (AirSense) (Cotton Like),outerwear,coat,small,inverted triangle,beige,images/outerwear/25.png,formal,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E444557-000?colorCode=COL32&sizeCode=SMA004
+Miracle Air Jacket (AirSense) (Wool Like),outerwear,coat,medium,rectangle,gray,images/outerwear/24.png,formal,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E448034-000?colorCode=COL05&sizeCode=SMA004
+Ultra Stretch Active Shorts,bottom,short,medium,hourglass,blue,images/bottom/75.png,athleisure,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E470722-000?colorCode=COL69&sizeCode=SMA004
+Chino Shorts (Relaxed Fit),bottom,short,small,hourglass,khaki,images/bottom/76.png,casual,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E470482-000?colorCode=COL00&sizeCode=SMA004
+Miracle Air Shorts (Pattern),bottom,short,small,rectangle-shaped,gray,images/bottom/77.png,formal,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E467577-000?colorCode=COL05&sizeCode=SMA004
+Ultra Stretch DRY-EX Shorts,bottom,short,medium,inverted triangle,gray,images/bottom/79.png,streetwear,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E465207-000?colorCode=COL67&sizeCode=SMA004
+Nylon Jogger Pants,bottom,pants,small,rectangle-shaped,gray,images/bottom/80.png,casual,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E467216-000?colorCode=COL03&sizeCode=SMA003
+Ultra Stretch DRY-EX Jogger Pants,bottom,pants,small,inverted triangle,gray,images/bottom/81.png,streetwear,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E465206-000?colorCode=COL67&sizeCode=SMA004
+Wide Fit Denim Cargo Pants,bottom,pants,medium,inverted triangle,blue,images/bottom/83.png,streetwear,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E471600-000?colorCode=COL08&sizeCode=SMA004
+Linen Blend Relaxed Pants,bottom,pants,small,hourglass,blue,images/bottom/84.png,casual,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E463977-001?colorCode=COL68&sizeCode=SMA004
+Linen Blend Relaxed Pants,bottom,pants,large,hourglass,gray,images/bottom/85.png,casual,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E463977-000?colorCode=COL67&sizeCode=SMA004
+Linen Blend Relaxed Pants,bottom,pants,medium,inverted triangle,beige,images/bottom/86.png,casual,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E463857-000?colorCode=COL32&sizeCode=SMA004
+Ultra Stretch DRY-EX Tapered Pants,bottom,pants,small,inverted triangle,gray,images/bottom/87.png,formal,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E465491-000?colorCode=COL69&sizeCode=SMA004
+Sweat Pants,bottom,pants,medium,hourglass,white,images/bottom/88.png,formal,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E451648-000?colorCode=COL09&sizeCode=SMA004
+Ultra Stretch DRY Shorts,bottom,short,large,rectangle-shaped,blue,images/bottom/89.png,streetwear,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E472022-000?colorCode=COL09&sizeCode=SMA003
+Utility Work Shorts,bottom,short,medium,inverted triangle,white,images/bottom/90.png,casual,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E467050-000?colorCode=COL56&sizeCode=SMA004
+Ultra Stretch Jeans (Damaged),bottom,jeans,medium,inverted triangle,blue,images/bottom/91.png,casual,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E468970-000?colorCode=COL63&sizeCode=INS029
+Ultra Stretch Jeans,bottom,jeans,medium,inverted triangle,blue,images/bottom/92.png,casual,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E468971-000?colorCode=COL65&sizeCode=INS029
+Ultra Stretch Jeans,bottom,jeans,small,rectangle-shaped,black,images/bottom/93.png,casual,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E450242-000?colorCode=COL68&sizeCode=INS029
+Slim Fit Jeans (Damaged),bottom,jeans,medium,rectangle-shaped,blue,images/bottom/94.png,casual,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E463907-000?colorCode=COL62&sizeCode=INS029
+Wide Fit Jeans,bottom,jeans,medium,inverted triangle,purple,images/bottom/95.png,casual,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E463915-000?colorCode=COL72&sizeCode=INS030
+ultra light down jacket,outerwear,jacket,small,inverted triangle,blue,images/outerwear/33.png,streetwear,masculine,uniqlo,https://www.uniqlo.com/ph/en/products/E459619-000?colorCode=COL69&sizeCode=SMA003
+ultra strecth dry-ex full-zip hoodie,outerwear,hoodie,large,hourglass,black,images/outerwear/34.png,casual,neutral,uniqlo,https://www.uniqlo.com/ph/en/products/E465203-000?colorCode=COL54&sizeCode=SMA004
+reversible parka,outerwear,jacket,medium,apple-shaped,purple,images/outerwear/35.png,casual,feminine,uniqlo,https://www.uniqlo.com/ph/en/products/E465471-000?colorCode=COL30&sizeCode=SMA003
+cotton blend parka,outerwear,jacket,meidium,apple-shaped,black,images/outerwear/36.png,streetwear,neutral,uniqlo,https://www.uniqlo.com/ph/en/products/E465467-000?colorCode=COL09&sizeCode=SMA003x`
+pocketable UV protection parka,outerwear,jacket,large,rectangle-shaped,pink,images/outerwear/37.png,streetwear,feminine,uniqlo,https://www.uniqlo.com/ph/en/products/E465466-000?colorCode=COL02&sizeCode=SMA003
+airism mesh uv protection full-zip hoodie,outerwear,hoodie,large,inverted triangle,gray,images/outerwear/38.png,casual,feminine,uniqlo,https://www.uniqlo.com/ph/en/products/E456261-000?colorCode=COL03&sizeCode=SMA003
+jersey relaxed jacket,outerwear,jacket,small,oval-shaped,beige,images/outerwear/38.png,casual,femine,uniqlo,https://www.uniqlo.com/ph/en/products/E465469-000?colorCode=COL31&sizeCode=SMA003
+miracle air jacket,outerwear,jacket,medium,inverted triangle,beige,images/outerwear/39.png,preppy,neutral,uniqlo,https://www.uniqlo.com/ph/en/products/E465474-000?colorCode=COL09&sizeCode=SMA003
+volume sleeve cocoon blouson,outerwear,longsleeve,large,inverted triangle,white,images/outerwear/40.png,formal,feminine,uniqlo,https://www.uniqlo.com/ph/en/products/E467012-000?colorCode=COL01&sizeCode=SMA004
+linen cotton coverall,outerwear,longsleeve,medium,apple-shaped,blue,images/outerwear/41.png,streetwear,feminine,uniqlo,https://www.uniqlo.com/ph/en/products/E470474-000?colorCode=COL60&sizeCode=SMA004
+denim coverall,outerwear,jacket,small,oval-shaped,blue,images/outerwear/43.png,casual,neutral,uniqlo,https://www.uniqlo.com/ph/en/products/E467117-000?colorCode=COL69&sizeCode=SMA004
+cotton blend parka,outerwear,jacket,large,interved triangle,pink,images/outerwear/45.png,casual,neutral,uniqlo,https://www.uniqlo.com/ph/en/products/E469774-000?colorCode=COL12&sizeCode=SMA002

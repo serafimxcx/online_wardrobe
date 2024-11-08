@@ -1,0 +1,1064 @@
+
+
+body{
+    font-family: "Playfair Display", serif;
+}
+
+.message_div{
+    background-color: white;
+    width: 25%;
+    padding: 4px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    text-align: center;
+    position: absolute;
+    border-radius: 5px;
+    z-index: 101;
+    top: 5%;
+    left: 45%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+#headercontainer{
+    width: 100%;
+    max-width: 100%;
+    background:none;
+    color: white;
+    padding: 30px;
+    z-index: 10;
+    position: fixed;
+    
+}
+
+#header{
+    color: black;  
+    width: 100%;
+}
+
+.app_title_container{
+    float: right;
+}
+
+#menu_btn{
+    font-size: 25px;
+    font-weight: bold;
+   width: 50px;
+   height: 50px;
+   border-radius: 10px;
+   background: none;
+   border:none;
+}
+
+#menu_close_btn{
+    font-size: 25px;
+    font-weight: bold;
+   width: 40px;
+   height: 40px;
+   border-radius: 10px;
+   background: none;
+   border:none;
+   position: absolute;
+   right: 10px;
+   top: 10px;
+}
+
+
+
+
+#menu_btn:hover{
+    border: 2px solid black;
+}
+
+#profile_mini_dp{
+    width: 10vw;
+    height: 10vw;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+#nav_mini_dp{
+    width: 6vw;
+    height: 6vw;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 10px;
+    margin-top: 5%; margin-bottom: 5%;
+    
+}
+
+.name_div{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 10px;
+}
+
+.profile_title{
+    font-weight: bold;
+    font-size: 3vw;
+    margin: 20px;
+}
+
+.user_name{
+    font-weight: bold;
+    font-size: 3vw;
+}
+
+.user_name2{
+    font-size: 1.5vw;
+}
+
+.apptitle{
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.searchdiv{ 
+    position: relative;
+    margin-top: -20px;
+    
+}
+
+#search{  
+    background-color: rgb(225, 225, 225);
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;   
+    z-index: 10;
+    position: absolute ;
+    right: 0;
+    width: 300px;
+    white-space: normal;
+    
+    
+}
+
+#search_name{
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+#btn_notif{
+    cursor: pointer;
+    font-size: 30px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.notif_indicator{
+    color: gold;
+}
+
+#btn_notif_div{
+    
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+
+#dropdown_notif{
+    display: none;
+    position: absolute;
+    background-color: white;
+    max-width: 250px;
+    max-height: 300px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    z-index: 15;
+    right: 10%;
+    color: black;
+    white-space: normal;
+}
+
+.search_icon{
+    color: white;
+}
+
+.searchdiv{
+    display: block;
+}
+
+
+#search_btn{
+    display: none;
+    text-align: left;
+        color: white;
+        font-size: 20px;
+        vertical-align: bottom;
+}
+
+.search_float{
+    float: right;
+}
+
+#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: white;
+    position: fixed;
+    height: 100%;
+    overflow-x: auto;
+    white-space: normal;
+    z-index: 99;
+    display: block;
+    border-right: 1px solid gray;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+li a, #m_destinations, #m_services {
+    display: block;
+    color: black;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+li a:hover{
+    background-color: rgb(206, 206, 206);
+    color: black;
+}
+
+.nav_active a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: none; 
+border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #DEDEDE; 
+}
+
+.content_container{
+    width: 69%;
+    height: 80%;
+    display: block;
+    margin-top: 110px;
+    margin-left: 28%;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 50px;
+    padding-top: 40px;
+    border-radius: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+}
+
+.content_title{
+    font-weight: bold;
+}
+
+.content_subtitle{
+    color: gray;
+    font-size: 15px;
+}
+
+#btn_plan_outfit{
+    padding: 3px 10px;
+    width: 50%;
+    text-align: left;
+    background-color: white;
+    border-radius: 7px;
+    color: gray;
+    margin-top: 10px;
+    transition: 0.2s ease;
+    border: 2px solid black;
+    
+}
+
+#btn_plan_outfit:hover{
+    background-color: rgb(206, 206, 206);
+    color: black;
+}
+
+#btn_add_outfit{
+    padding: 3px 10px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    background-color: white;
+    border-radius: 7px;
+    color: gray;
+    margin-top: 10px;
+    transition: 0.2s ease;
+    border: 2px solid black;
+    font-size: 30px;
+}
+
+#btn_add_outfit:hover{
+    background-color: rgb(206, 206, 206);
+    color: black;
+}
+
+.profile_nav{
+    border-top: 1px solid rgb(221, 221, 221);
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+.profile_nav tr td{
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.profile_nav tr td:hover{
+    background-color: rgb(206, 206, 206);
+}
+
+.reco_outfit{
+    width: auto;
+    height: 20vw;
+    padding: 15px;
+    border-radius: 7px;
+}
+
+.reco_outfit_div{
+    text-align: center;
+    border-radius: 10px;
+}
+
+.reco_outfit_div:hover{
+    border: 2px solid black;
+    
+}
+
+
+.n_reco_outfit_container{
+    width: 300px;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.n_reco_outfit_container:hover{
+    border: 2px solid black;
+}
+
+.img_reco_item{
+    height: 200px;
+    width: auto;
+}
+
+.reco_outfit_name {
+
+    text-transform: capitalize;
+    background-color: black;
+    color: white;
+    padding: 5px 20px;
+}
+
+.nav_category{
+    border-bottom: 1px solid black;
+}
+
+.nav_category tr td{
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav_category tr td:hover{
+    background-color: rgb(206, 206, 206);
+}
+
+.active_category{
+    background-color: black; color: white;
+}
+
+.default_btn{
+    padding: 3px 10px;
+    text-align: left;
+    background-color: white;
+    border-radius: 7px;
+    color: gray;
+    transition: 0.2s ease;
+    border: 2px solid black;
+    margin-right: 3px;
+}
+
+
+.default_btn:hover{
+    background-color: rgb(206, 206, 206);
+    color: black;
+}
+
+.item_owned{
+    padding: 10px 15px;
+    text-align: left;
+    background-color: rgb(85, 176, 85);
+    border-radius: 7px;
+    color: white;
+    transition: 0.2s ease;
+    border: 2px solid black;
+    margin-right: 3px;
+}
+
+.item_remove{
+    padding: 10px 15px;
+    text-align: left;
+    background-color: rgb(180, 86, 86);
+    border-radius: 7px;
+    color: white;
+    transition: 0.2s ease;
+    border: 2px solid black;
+    margin-right: 3px;
+}
+
+.btn_reco{
+    padding: 10px 15px;
+    text-align: left;
+    background-color: white;
+    border-radius: 7px;
+    color: gray;
+    transition: 0.2s ease;
+    border: 2px solid black;
+    margin-right: 3px;
+}
+
+.btn_reco:hover{
+    background-color: rgb(206, 206, 206);
+    color: black;
+}
+
+#btn_submit_item, #btn_cancel_submit_item{
+    display: none;
+    margin-right: 5px;
+}
+
+#additem_container{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.txt_input{
+    border:none;
+    border-bottom: 1px solid gray;
+    outline: none;
+    padding: 10px;
+    width: 90%;
+    background: none;
+}
+
+.txt_updateinput{
+    border:none;
+    border-bottom: 1px solid gray;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    background: none;
+    margin-top: -10px;
+}
+
+.txt_column {
+    display: flex;
+    align-items: flex-end;
+}
+
+.txt_label {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.img_user_outfit{
+    height: 150px;
+    width: auto;
+    margin: 20px;
+}
+
+
+
+
+.file-upload-div{
+    border-bottom: 1px solid gray;
+    width: 90%;
+    padding-bottom: 10px;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: transparent;
+    margin-bottom: 0;
+}
+
+
+input[type="file"] {
+    display: none;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(128, 128, 128, 0.5);
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#enterheight_modal{
+    display: flex;
+}
+
+#reco_outfit_modal{
+    display: none;
+}
+
+#reco_outfit_div2{
+    width: 50%;
+    max-height: 90%;
+    background-color: white;
+    padding: 50px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#enterheight_div{
+    width: 30%;
+    background-color: white;
+    padding: 50px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#heightInput{
+    text-align: center;
+}
+
+#captureButton{
+    position: absolute;
+    z-index:2;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.countdownModal {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: center;
+   
+}
+
+.countdown_div {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+#countdownTimer{
+    color: rgba(255, 255, 255, 0.2);
+    font-weight: bold;
+    font-size: 10vw;
+}
+
+#delete_item_div{
+    width: 50%;
+    background-color: white;
+    padding: 50px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#preview-image{
+    width: auto;
+    height: 40vw;
+    
+}
+
+#file-name-output{
+    cursor: pointer;
+}
+
+.img_outfit_col{
+    text-align: center;
+}
+
+.img_outfit_col:hover {
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.img_container{
+    
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item_img{
+    height: 200px;
+    width: auto;
+    border-radius: 5px;
+    transition: 0.4s ease;
+    
+}
+
+.item_container{
+    display: none;
+    
+}
+
+
+.list_style{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.btn_modify_container{
+    margin-bottom: 20px;
+}
+
+.img_create_outfit{
+    height: 200px;
+    width: auto;
+    max-width: 400px;
+    margin: 20px;
+    
+}
+
+.img_outfit_container{
+    width: auto;
+    overflow-x: auto;
+    margin: 0 auto;
+}
+
+.index_img_outfit_container{
+    width: auto;
+    overflow-x: auto;
+    margin: 0 auto;
+}
+
+
+
+.create_outfit_container{
+    display: none;
+}
+
+.category_container{
+    display: none;
+}
+
+.btn_create_back{
+    max-width: 150px;
+    text-align: center;
+}
+
+.img_top_container2, .img_bottoms_container2, .img_footwears_container2, .img_outerwears_container2, .img_dress_container2, .img_accessory_container2{
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+
+
+.outfit_container2 {
+    position: relative; 
+    text-align: center; 
+    padding: 10px;
+    padding-right: 10px;
+    width: 300px;
+    border-radius: 7px;
+}
+
+.outfit_container2:hover{
+    border: 2px solid black;
+}
+
+.event_outfits, .smart_event_outfits {
+    position: relative; 
+    text-align: center; 
+    padding: 10px;
+    padding-right: 10px;
+    width: 300px;
+    border-radius: 7px;
+    margin: 0 auto;
+}
+
+.index_event_outfits {
+    position: relative; 
+    padding: 10px;
+    padding-right: 10px;
+    width: 300px;
+    height: 320px;
+    border-radius: 7px;
+    margin: 0 auto;
+}
+
+.event_outfits:hover{
+    border: 2px solid black;
+}
+
+.index_event_outfits:hover{
+    border: 2px solid black;
+}
+
+.img_item_outfit {
+    position: absolute; 
+    top: 10%; 
+    left: 0; 
+    border-radius: 8px; 
+    height: 150px;
+    width: auto;
+    transform: translateX(50%);
+}
+
+
+#img_outerwear{
+    left: 50px;
+}
+
+#img_top{
+    left: -50px;
+}
+
+#img_bottom {
+    top: 130px; 
+    left: 5px; 
+}
+
+#img_footwear {
+    top: 150px; 
+    left: 40px; 
+}
+
+.img_accessory{
+    top: 220px; 
+    left:  -10px; 
+    height: 80px;
+}
+
+.outfit_title {
+    font-size: 18px; 
+    margin-top: 100px; 
+    font-weight: bold;
+    
+}
+
+
+.img_outfit_container2 tr td{
+    
+    padding: 5px;  
+    vertical-align: top; 
+    
+}
+
+.plan_outfit_container2{
+    margin: 0 auto;
+}
+
+.plan_outfit_container2 tr td{
+    
+    padding: 5px;  
+    vertical-align: top; 
+    
+}
+
+
+
+
+
+
+
+.outfit_info_container{
+    display: table;
+}
+
+.outfit_info{
+    display: table-cell;
+    vertical-align: middle;
+
+}
+
+.btn_new_outfit{
+    height: 369px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    font-size: 80px;
+    transition: 0.2s ease;
+}
+
+.btn_new_outfit:hover{
+    background-color: rgb(206, 206, 206);
+    color: black;
+}
+
+.img_item{
+    width: auto;
+    height: 35vw;
+}
+
+.recommended_container{
+    padding: 30px;
+}
+
+.r_item_name{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.img_reco{
+    width: auto;
+    height: 10vw;
+    margin-right: 20px;
+}
+
+.n_reco_item{
+    cursor: pointer;
+}
+
+.n_reco_item{
+    transition: 0.2s ease;
+}
+
+.n_reco_item td{
+    padding-top:10px;
+    padding-bottom: 10px;
+    line-height: 1.6;
+}
+
+.n_reco_item:hover{
+    background-color: #555;
+    color: white;
+}
+
+.addevent_div {
+    background-color: #fefefe;
+    text-align: center;
+    padding: 20px;
+    width: 50%;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    max-height: 90%;
+    overflow: auto;
+    
+}
+
+
+.event_outfit_container2{
+    margin: 10px;
+}
+
+.eventdetail_div{
+    background-color: #fefefe;
+    text-align: center;
+    padding: 20px;
+    width: 50%;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    max-height: 90%;
+    overflow: auto;
+}
+
+
+
+
+.fc-event {
+    background-color: #555; /* Event background color */
+    color: white !important; /* Event text color */
+    border-color: #555; /* Event border color */
+    padding: 5px;
+}
+
+.video_output{
+    border-radius: 10px;
+}
+
+.img_wishlist_item{
+    height: 200px;
+    width: 200px;
+    border-radius: 9px;
+    object-fit: contain;
+    padding: 5px;
+    
+}
+
+.img_wishlist_item:hover{
+    border: 2px solid black;
+}
+
+#right_col_editprof{
+    text-align: right;
+}
+
+
+
+#editprof_div{
+    width: 50%;
+    max-height: 90%;
+    overflow-y: auto;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #fefefe;
+    padding: 30px;
+}
+
+#imageUpload
+{
+    display: none;
+}
+
+#profileImage
+{   
+    width: 10vw;
+    height: 10vw;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid black;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+
+@media (max-width: 1024px){
+    #editprof_div{
+        width: 90%;
+    }
+    #right_col_editprof, #left_col_editprof{
+        text-align: center;
+    }
+    
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 0;
+    }
+
+    .user_name{
+        font-weight: bold;
+        font-size: 5vw;
+    }
+    
+    .user_name2{
+        font-size: 4.5vw;
+    }
+
+    #nav_mini_dp{
+        width: 15vw;
+        height: 15vw;
+        
+    }
+
+    #close_menu_li{
+        display: block;
+    }
+
+    #menu_btn{
+       display: block;
+    }
+
+    #navbar{
+        width: 70%;
+        display: none;
+    }
+
+    .content_container{
+        width: 90%;
+        display: block;
+        margin-left: 5%;
+        margin-top: 100px;
+        position: absolute;
+        box-shadow: none;
+        padding: 20px;
+        
+    }
+
+    #btn_plan_outfit{
+        width: 100%;
+    }
+
+    #preview-image{
+        height: 70vw;
+        
+    }
+
+    .item_img{
+        margin-bottom: 30px;
+    }
+
+    .addevent_div, .eventdetail_div{
+        width: 90%;
+    }
+
+    #enterheight_div, #reco_outfit_div2{
+        width:80%;
+    }
+
+    .reco_outfit{
+        width: 100%;
+        height: auto;
+    }
+
+    #profile_mini_dp, #profileImage{
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .message_div{
+        width: 80%;
+        left: 10%;
+    }
+  
+}
+
+

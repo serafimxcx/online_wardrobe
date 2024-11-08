@@ -1,0 +1,53 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="{% static 'wardrobe/loginstyle.css' %}" rel="stylesheet">
+    <title>Register</title>
+</head>
+<body>
+    <div class="register_body">
+        <div class="register_container">
+            <h1 class="apptitle"><a href="{% url 'login' %}">FashionFolio</a></h1>
+            <h5>Your fashion journey starts here.</h5>
+            <h5>Create an account and discover your digital style haven.</h5>
+            <hr>
+            <br>
+            <form action="{% url 'register' %}" method="POST">
+                {% csrf_token %}
+                <table>
+                    <tr>
+                        <td>Enter desired username: </td>
+                        <td><input type="text", name="reg_username", placeholder="Username", class="txtlogin" required></td>
+                    </tr>
+                    <tr>
+                        <td>Enter desired password: </td>
+                        <td><input type="password", name="reg_password1", placeholder="Password", class="txtlogin" required></td>
+                    </tr>
+                    <tr>
+                        <td>Re-type password: </td>
+                        <td><input type="password", name="reg_password2", placeholder="Password", class="txtlogin" required></td>
+                    </tr>
+                    <tr>
+                        <td>Enter your email: </td>
+                        <td><input type="email", name="reg_email", placeholder="name@sasdw.com", class="txtlogin" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><br><center><input type="submit" class="btn_log btn_reg" value="Register"></center></td>
+                    </tr>
+                </table>
+            </form>
+            <br>
+            {% if message %}
+                <span>{{ message }}</span>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>

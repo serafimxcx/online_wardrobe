@@ -1,0 +1,321 @@
+{% extends "wardrobe/layout.html" %}
+{% load static %}
+
+{% block body %}
+    <div class="content_container">
+        <div class="outfits_container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3><b>Your Outfits</b></h3>
+                </div>
+                <div class="col-lg-6" style="text-align: right;">
+                    <button type="button" class="default_btn" id="btn_smartcreate"><i class="bi bi-magic"></i> Smart Creation</button>&nbsp;
+                    <button type="button" class="default_btn" id="btn_createoutfit"><i class="bi bi-plus"></i> Create New Outfit</button>
+                  
+                </div>
+
+            </div>
+            <hr>
+
+            <div class="img_outfit_container" id="img_outfit_container">
+                <table class="img_outfit_container2">
+                    <tr>
+                        {% for outfit in outfits %}
+                        <td>
+                            <a href="{% url 'outfit_details' outfit_id=outfit.id %}"><div class="outfit_container2" id="{{outfit.id}}">
+                                {% if outfit.outerwear.image is not None %}
+                                <img src="/media/{{ outfit.outerwear.image }}" alt="" class="img_item_outfit" id="img_outerwear">
+                                {% endif %}
+                                <img src="/media/{{ outfit.top.image }}" alt="" class="img_item_outfit" id="img_top"><br><br><br>
+                                <img src="/media/{{ outfit.bottom.image }}" alt="" class="img_item_outfit" id="img_bottom"><br><br><br>
+                                <img src="/media/{{ outfit.footwear.image }}" alt="" class="img_item_outfit" id="img_footwear"><br><br><br>
+                                {% for accessory in outfit.accessories.all %}
+                                    <img src="/media/{{ accessory.image }}" alt="" class="img_item_outfit img_accessory">
+                                {% endfor %}
+                                <h5 class="outfit_title">{{ outfit.outfit_name }}</h5>
+                            </div></a>
+                        </td>
+
+                        </td>
+                        {%empty%}
+                        <td>You haven't created any outfit.</td>
+    
+                        {% endfor %}
+                    </tr>
+                </table>
+            </div>
+
+            
+            
+        </div>
+
+        <form action="{% url 'add_outfit' %}" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="c_top" id="c_top">
+            <input type="hidden" name="c_bottom" id="c_bottom">
+            <input type="hidden" name="c_footwear" id="c_footwear">
+            <input type="hidden" name="c_outerwear" id="c_outerwear">
+            <input type="hidden" name="c_dress" id="c_dress">
+            <input type="hidden" name="c_accessory" id="c_accessory">
+            <div class="create_outfit_container">
+                <h3><b>Create Your Outfit</b></h3>
+
+                <div class="category_container" id="tops_container">
+                    <span class="create_instruct_txt">Step 1: Choose a Top</span>
+                    <br><br>
+                    <div class="img_outfit_container" id="img_tops_container">
+                        <table>
+                            <tr>
+                                {% for top in tops %}
+                                <td>
+                                    <div class="img_top_container2 img_category_container" top_id="{{top.id}}" category="{{top.category.name}}" subcategory="{{top.subcategory.name}}" id="top{{top.id}}">
+                                        <img src="/media/{{ top.image }}" alt="{{ top.outfit_name }}" class="img_create_outfit img-fluid">
+                                    </div>
+                                </td>
+                                    
+                                
+                                {% endfor %}
+                            </tr>
+                        </table>
+                        
+                    </div>
+                    <br><hr>
+                    <table width="100%" style="bottom: 0;">
+                        <tr>
+                            <td><button type="button" class="default_btn btn_create_back" id="btn_back1">Back</button></td>
+                            <td style="text-align: right;">
+                                <button type="button" class="default_btn btn_create_back" id="btn_next0" style="display: none;">Skip to Footwear</button>
+                                <button type="button" class="default_btn btn_create_back" id="btn_next1" style="display: inline-block;">Next</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="category_container" id="bottoms_container">
+                    <span class="create_instruct_txt">Step 2: Choose a Bottom</span>
+                    <br><br>
+                    <div class="img_outfit_container" id="img_bottoms_container">
+                        <table>
+                            <tr>
+                                {% for bottom in bottoms %}
+                                <td>
+                                    <div class="img_bottoms_container2 img_category_container" bottom_id="{{bottom.id}}" id="bottom{{bottom.id}}">
+                                        <img src="/media/{{ bottom.image }}" alt="{{ bottom.outfit_name }}" class="img_create_outfit img-fluid">
+                                    </div>
+                                </td>
+                                    
+                                
+                                {% endfor %}
+                            </tr>
+                        </table>
+                        
+                    </div>
+                    <br><hr>
+                    <table width="100%" style="bottom: 0;">
+                        <tr>
+                            <td><button type="button" class="default_btn btn_create_back" id="btn_back2">Back</button></td>
+                            <td style="text-align: right;"><button type="button" class="default_btn btn_create_back" id="btn_next2">Next</button></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="category_container" id="footwears_container">
+                    <span class="create_instruct_txt">Step 3: Choose a footwear</span>
+                    <br><br>
+                    <div class="img_outfit_container" id="img_footwears_container">
+                        <table>
+                            <tr>
+                                {% for footwear in footwears %}
+                                <td>
+                                    <div class="img_footwears_container2 img_category_container" footwear_id="{{footwear.id}}" id="footwear{{footwear.id}}">
+                                        <img src="/media/{{ footwear.image }}" alt="{{ footwear.outfit_name }}" class="img_create_outfit img-fluid">
+                                    </div>
+                                </td>
+                                    
+                                
+                                {% endfor %}
+                            </tr>
+                        </table>
+                        
+                    </div>
+                    <br><hr>
+                    <table width="100%" style="bottom: 0;">
+                        <tr>
+                            <td><button type="button" class="default_btn btn_create_back" id="btn_back3">Back</button></td>
+                            <td style="text-align: right;"><button type="button" class="default_btn btn_create_back" id="btn_next3">Next</button></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- <div class="category_container" id="dress_container">
+                    <span class="create_instruct_txt">Step 1: Choose a dress</span>
+                    <br><br>
+                    <div class="img_outfit_container" id="img_dress_container">
+                        <table>
+                            <tr>
+                                
+                                {% for dress in dresses %}
+                                <td>
+                                    <div class="img_dress_container2 img_category_container" dress_id="{{dress.id}}" id="dress{{dress.id}}">
+                                        <img src="/media/{{ dress.image }}" alt="{{ dress.outfit_name }}" class="img_create_outfit img-fluid">
+                                    </div>
+                                </td>
+                                    
+                                
+                                {% endfor %}
+                            </tr>
+                        </table>
+                        
+                    </div>
+                    <br><hr>
+                    <table width="100%" style="bottom: 0;">
+                        <tr>
+                            <td><button type="button" class="default_btn btn_create_back" id="btn_back0">Back</button></td>
+                            <td style="text-align: right;"><button type="button" class="default_btn btn_create_back" id="btn_next5">Next</button></td>
+                        </tr>
+                    </table>
+                </div> -->
+
+                <div class="category_container" id="outerwears_container">
+                    <span class="create_instruct_txt">Step 4: Choose an outerwear</span>
+                    <br><br>
+                    <div class="img_outfit_container" id="img_outerwears_container">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="img_outerwears_container2 img_category_container" >
+                                        <img src="/media/user_items/no_wear.png" alt="None" class="img_create_outfit img-fluid">
+                                    </div>
+                                </td>
+                                {% for outerwear in outerwears %}
+                                <td>
+                                    <div class="img_outerwears_container2 img_category_container" outerwear_id="{{outerwear.id}}" id="outerwear{{outerwear.id}}">
+                                        <img src="/media/{{ outerwear.image }}" alt="{{ outerwear.outfit_name }}" class="img_create_outfit img-fluid">
+                                    </div>
+                                </td>
+                                    
+                                
+                                {% endfor %}
+                            </tr>
+                        </table>
+                        
+                    </div>
+                    <br><hr>
+                    <table width="100%" style="bottom: 0;">
+                        <tr>
+                            <td><button type="button" class="default_btn btn_create_back" id="btn_back4">Back</button></td>
+                            <td style="text-align: right;"><button type="button" class="default_btn btn_create_back" id="btn_next4">Next</button></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="category_container" id="accessories_container">
+                    <span class="create_instruct_txt">Step 5: Choose an accessories</span>
+                    <br><br>
+                    <div class="img_outfit_container" id="img_accessories_container">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="img_accessory_container2 img_category_container" id="btn_no_accessory">
+                                        <img src="/media/user_items/no_wear.png" alt="None"  class="img_create_outfit img-fluid">
+                                    </div>
+                                </td>
+                                {% for accessory in accessories %}
+                                <td>
+                                    <div class="img_accessory_container2 img_category_container" accessory_id="{{accessory.id}}" id="accessory{{accessory.id}}">
+                                        <img src="/media/{{ accessory.image }}" alt="{{ accessory.outfit_name }}" class="img_create_outfit img-fluid">
+                                    </div>
+                                </td>
+                                    
+                                
+                                {% endfor %}
+                            </tr>
+                        </table>
+                        
+                    </div>
+                    <br><hr>
+                    <table width="100%" style="bottom: 0;">
+                        <tr>
+                            <td><button type="button" class="default_btn btn_create_back" id="btn_back5">Back</button></td>
+                            <td style="text-align: right;"><button type="button" class="default_btn btn_create_back" id="btn_next5">Next</button></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="category_container" id="namedesc_container">
+                    <span class="create_instruct_txt">Name this outfit and add some description</span>
+                    <br><br>
+                    <div class="img_outfit_container" id="img_outerwears_container">
+                        <span>Name:</span><br>
+                        <input type="text" class="txt_input" name="txt_outfitname" id="txt_outfitname" required><br><br>
+                        <span>Description:</span><br>
+                        <textarea class="txt_input" name="txt_desc" id="txt_desc" ></textarea>
+                        
+                        
+                    </div>
+                    <br><hr>
+                    <table width="100%" style="bottom: 0;">
+                        <tr>
+                            <td><button type="button" class="default_btn btn_create_back" id="btn_back6">Back</button></td>
+                            <td style="text-align: right;"><button type="submit" class="default_btn btn_create_back">Save</button></td>
+                        </tr>
+                    </table>
+                </div>
+
+                
+
+                <center><span id="message">Choose an item.</span></center>   
+            </div>
+
+            <div class="category_container" id="smartcreate_container" style="position: relative; height: 450px;">
+                
+                <h3><b><i class="bi bi-magic"></i> Smart Creation</b></h3>
+                
+                <span class="create_instruct_txt">Choose a type of event to attend: </span><br><br><br><br><br><br>
+                <center>
+                    <select name="slct_event" class="txt_input" id="slct_event" required>
+                        <option value="">Select event...</option>
+                        <option value="casual">Casual</option>
+                        <option value="formal">Formal</option>
+                        <option value="romantic">Romantic</option>
+                        <option value="cultural">Cultural</option>
+                        <option value="creative">Creative</option>
+                        <option value="outdoor">Outdoor</option>
+                        <option value="party">Party</option>
+                    </select>
+                </center>
+                
+                <div style="position: absolute; bottom: 0;">
+                    <button type="button" class="default_btn" id="btn_back0">Back</button>
+                    <button type="button" class="default_btn" id="btn_continue_smartreco">Continue</button>
+                </div>
+               
+            </div>
+
+            <div class="category_container" id="smartcreate_value_container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h3><b><i class="bi bi-magic"></i> Smart Creation</b></h3>
+                        <h5>Here is the outfit that suits for <b><span id="c_event_type"></span></b> events...</h5>
+                    </div>
+                    <div class="col-sm-6" style="text-align: right;">
+                        <button type="button" class="default_btn" id="btn_backtoevent">Back</button>
+                        <button type="button" class="default_btn" id="btn_generate_again">Generate Again</button>
+                        <button type="button" class="default_btn" id="btn_continue_smartreco2">Continue</button>
+                    </div>
+                </div>
+                <hr>
+                <div class="img_outfit_container">
+                    <table class="plan_outfit_container2">
+                        <tr>
+                            
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="{% static 'wardrobe/script_creation.js' %}"></script>
+{% endblock %}
